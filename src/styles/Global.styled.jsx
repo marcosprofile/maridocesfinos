@@ -32,7 +32,7 @@ export const PaddingContainer = styled.div`
   }
 `;
 
-export const FlexContainer = styled.div`
+export const FlexContainer = styled(PaddingContainer)`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
@@ -88,6 +88,10 @@ export const LinkContainer = styled(PaddingContainer)`
   font-weight: 500;
   background-color: ${props => props.primary ? Primary : props.secondary ? Secondary : 'transparent'};
   color: ${props => (props.primary || props.secondary) ? ColorGrey : 'white'};
+`;
+
+export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
+
 `;
 
 export const Button = styled(LinkContainer).attrs({ as: 'button'})`
