@@ -1,43 +1,46 @@
 import React from 'react';
 
 import {
-  FlexContainer,
   Image,
-  PaddingContainer,
-  Paragraph,
-  Title,
+  GridItem,
+  GridDesc,
+  Heading,
 } from '../styles/Global.styled';
 
 const Products = ({ data }) => {
   return (
-    <FlexContainer
-      direction="column"
-      align="left"
-      radius="8px"
-      border
-    >
-      <Image src={data.product_image} alt={data.product_name} draggable="false" />
-      <PaddingContainer
-        top="50px"
-        bottom="50px"
-        left="44px"
-        right="44px"
-      >
-        <Title grey weight="bold" >
-          {data.product_name}
-        </Title>
-        <Paragraph grey >
-          {data.desc}
-        </Paragraph>
-        <Paragraph
+    <GridItem border>
+      <Image
+        src={data.product_image}
+        alt={data.product_name}
+        draggable="false"
+      />
+      <GridDesc>
+        <Heading
+          as="h3"
+          size="h3"
+          weight="bold"
           grey
-          size="24px"
+        >
+          {data.product_name}
+        </Heading>
+        <Heading
+          as="p"
+          size="p"
+          grey
+        >
+          {data.desc}
+        </Heading>
+        <Heading
+          as="h3"
+          size="h3"
+          grey
         >
           {data.price}
-        </Paragraph>
-      </PaddingContainer>
-    </FlexContainer>
+        </Heading>
+      </GridDesc>
+    </GridItem>
   )
 }
 
-export default Products
+export default Products;

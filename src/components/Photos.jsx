@@ -19,6 +19,7 @@ const Photos = () => {
       bottom="8rem"
       left="240px"
       right="240px"
+      responsive
     >
       <FlexContainer
         as={motion.div}

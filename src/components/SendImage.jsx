@@ -19,6 +19,7 @@ const SendImage = () => {
       bottom="8rem"
       left="240px"
       right="240px"
+      responsive
       bgBlue
     >
       <FlexContainer

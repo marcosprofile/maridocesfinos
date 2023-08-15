@@ -19,6 +19,26 @@ export const Gallery = [
     id: 3,
     image: '...'
   },
+  {
+    id: 4,
+    image: '...'
+  },
+  {
+    id: 5,
+    image: '...'
+  },
+  {
+    id: 6,
+    image: '...'
+  },
+  {
+    id: 7,
+    image: '...'
+  },
+  {
+    id: 8,
+    image: '...'
+  },
 ]
 
 export const productDetails = [

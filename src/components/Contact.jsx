@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {
   FlexContainer,
   PaddingContainer,
-  TextColor,
+  Heading,
 } from '../styles/Global.styled';
 
 import {
@@ -19,6 +19,7 @@ const Contact = () => {
       bottom="8rem"
       left="240px"
       right="240px"
+      responsive
       bgBlue
     >
       <FlexContainer
@@ -28,13 +29,13 @@ const Contact = () => {
         whileInView="visible"
         justify="center"
       >
-        <TextColor
-          size="32px"
+        <Heading
+          as="h1"
+          size="h1"
           weight="bold"
-          fontTransform="uppercase"
         >
-          Contato
-        </TextColor>
+          CONTATO
+        </Heading>
       </FlexContainer>
     </PaddingContainer>
   )

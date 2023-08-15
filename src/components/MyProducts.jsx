@@ -18,27 +18,22 @@ const MyProducts = () => {
     <PaddingContainer
       top="3rem"
       bottom="8rem"
-      left="240px"
-      right="240px"
+      responsive
     >
       <GridContainer
         as={motion.div}
         variants={fadeInTopVariant}
         initial="hidden"
         whileInView="visible"
-        align="center"
-        direction="column"
-        gap="2rem"
       >
         {productDetails.map((product) => (
-            <PaddingContainer key={product.id}>
-              <Products data={product} />
-            </PaddingContainer>
-          ))}
+          <PaddingContainer responsive key={product.id}>
+            <Products data={product} />
+          </PaddingContainer>
+        ))}
       </GridContainer>
       <FlexContainer
         top="40px"
-        width="100%"
         justify="center"
       >
         <RouterLink

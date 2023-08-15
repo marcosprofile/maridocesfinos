@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 import {
   FlexContainer,
+  Heading,
   PaddingContainer,
-  TextColor,
 } from '../styles/Global.styled';
 
 import {
@@ -19,6 +19,7 @@ const AboutMe = () => {
       bottom="8rem"
       left="240px"
       right="240px"
+      responsive
     >
       <FlexContainer
         as={motion.div}
@@ -27,14 +28,14 @@ const AboutMe = () => {
         whileInView="visible"
         justify="center"
       >
-        <TextColor
-          size="32px"
+        <Heading
+          as="h1"
+          size="h1"
           weight="bold"
           grey
-          fontTransform="uppercase"
         >
-          Sobre mim
-        </TextColor>
+          SOBRE MIM
+        </Heading>
       </FlexContainer>
     </PaddingContainer>
   )

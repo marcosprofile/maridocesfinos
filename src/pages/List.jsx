@@ -3,9 +3,8 @@ import { motion } from 'framer-motion';
 
 import {
   FlexContainer,
+  Heading,
   PaddingContainer,
-  Paragraph,
-  Title,
 } from '../styles/Global.styled';
 
 import MyProducts from '../components/MyProducts';
@@ -19,6 +18,7 @@ const List = () => {
       bottom="8rem"
       left="240px"
       right="240px"
+      responsive
       bgWhite
     >
       <FlexContainer
@@ -30,19 +30,20 @@ const List = () => {
         direction="column"
         gap=".5rem"
       >
-        <Title
-          size="48px"
-          weight="600"
+        <Heading
+          as="h1"
+          size="h1"
           grey
         >
           Catálogo
-        </Title>
-        <Paragraph
-          size="24px"
+        </Heading>
+        <Heading
+          as="h4"
+          size="h4"
           grey
         >
           Para quaisquer eventos e pessoas queridas para você
-        </Paragraph>
+        </Heading>
         <MyProducts />
       </FlexContainer>
     </PaddingContainer>
