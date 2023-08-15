@@ -7,17 +7,17 @@ import List from './pages/List';
 import Header from './components/Header';
 import { MainBody } from './styles/Global.styled';
 
-function App() {
-  function ScrollToTop() {
-    const { pathname } = useLocation();
-  
-    React.useEffect(() => {
-      window.scrollTo(0, 0);
-    }, [pathname]);
-  
-    return null;
-  }
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
