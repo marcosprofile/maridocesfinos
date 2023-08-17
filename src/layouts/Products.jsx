@@ -2,14 +2,13 @@ import React from 'react';
 
 import {
   Image,
-  GridItem,
   GridDesc,
   Heading,
 } from '../styles/Global.styled';
 
 const Products = ({ data }) => {
   return (
-    <GridItem border>
+    <>
       <Image
         src={data.product_image}
         alt={data.product_name}
@@ -39,7 +38,7 @@ const Products = ({ data }) => {
           {data.price}
         </Heading>
       </GridDesc>
-    </GridItem>
+    </>
   )
 }
 

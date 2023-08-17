@@ -1,6 +1,6 @@
 import React from 'react';
 import Showcase from '../components/Showcase';
-import Photos from '../components/Photos';
+import MyPhotos from '../components/MyPhotos';
 import SendImage from '../components/SendImage';
 import AboutMe from '../components/AboutMe';
 import Contact from '../components/Contact';
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Showcase />
-      <Photos />
+      <MyPhotos />
       <SendImage />
       <AboutMe />
       <Contact />

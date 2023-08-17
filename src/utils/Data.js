@@ -2,42 +2,54 @@
 
 import Image1 from '../assets/product_1.png';
 
+// Instagram Photos
+import Insta1 from '../assets/product_1.png';
+import Insta2 from '../assets/product_2.png';
+import Insta3 from '../assets/product_3.png';
+import Insta4 from '../assets/product_4.png';
+import Insta5 from '../assets/product_5.png';
+import Insta6 from '../assets/product_6.png';
+import Insta7 from '../assets/product_7.png';
+import Insta8 from '../assets/product_8.png';
+import Insta9 from '../assets/product_9.png';
+
+
 export const Gallery = [
   {
     id: 0,
-    image: '...'
+    image: Insta1
   },
   {
     id: 1,
-    image: '...'
+    image: Insta2
   },
   {
     id: 2,
-    image: '...'
+    image: Insta3
   },
   {
     id: 3,
-    image: '...'
+    image: Insta4
   },
   {
     id: 4,
-    image: '...'
+    image: Insta5
   },
   {
     id: 5,
-    image: '...'
+    image: Insta6
   },
   {
     id: 6,
-    image: '...'
+    image: Insta7
   },
   {
     id: 7,
-    image: '...'
+    image: Insta8
   },
   {
     id: 8,
-    image: '...'
+    image: Insta9
   },
 ]
 

@@ -29,9 +29,20 @@ export const PaddingContainer = styled.div`
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
 
+  @media (max-width: 1440px) {
+    padding-left: ${(props) => props.responsive ? '3rem' : ''};
+    padding-right: ${(props) => props.responsive ? '3rem' : ''};
+  }
+
   @media (max-width: 1024px) {
     padding-left: ${(props) => props.responsive ? '1rem' : ''};
     padding-right: ${(props) => props.responsive ? '1rem' : ''};
+    width: ${(props) => props.responsive ? '100%' : ''};
+  };
+  
+  @media (max-width: 768px) {
+    padding-top: ${(props) => props.responsive ? '4rem' : ''};
+    padding-bottom: ${(props) => props.responsive ? '' : ''};
     width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
@@ -43,6 +54,15 @@ export const FlexContainer = styled(PaddingContainer)`
   align-items: ${({ align }) => align};
   border-radius: ${({ radius }) => radius};
   gap: ${({ gap }) => gap};
+
+  @media (max-width: 1175px) {
+    display: ${(props) => props.respImg ? 'none' : ''};
+  }
+  
+  @media (max-width: 600px) {
+    width: ${(props) => props.respAction ? '100%' : ''};
+    flex-direction: ${(props) => props.respAction ? 'column' : ''};
+  }
 `;
 
 export const StyledHeader = styled(FlexContainer).attrs({ as: 'header' })`
@@ -79,6 +99,8 @@ export const Heading = styled(PaddingContainer)`
   color: ${(props) => props.grey ? ColorGrey : 'white'};
   font-weight: ${({ weight }) => weight};
   text-align: ${({ align }) => align};
+  line-height: 156%;
+  margin-bottom: ${({ bottom }) => bottom};
   font-size: ${({ size }) => {
     switch(size) {
       case 'h1':
@@ -133,19 +155,23 @@ export const Paragraph = styled(TextColor).attrs({ as: 'p'})``;
 export const Image = styled.img`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
+  border-radius: ${({ radius }) => radius};
   object-fit: cover;
 
   @media (max-width: 768px) {
-    height: ${(props) => props.respWidth ? '40px' : ''}
-  }
+    height: ${(props) => props.respWidth ? '40px' : ''};
+  };
 `;
 
-export const LinkContainer = styled(PaddingContainer)`
+export const LinkContainer = styled(FlexContainer)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: .5rem;
   font-size: 18px;
   font-weight: 500;
-  background-color: ${props => props.primary ? Primary : props.secondary ? Secondary : 'transparent'};
-  color: ${props => (props.primary || props.secondary) ? ColorGrey : 'white'};
+  background-color: ${props => props.primary ? Primary : props.secondary ? Secondary : 'transparent'} !important;
+  color: ${props => (props.primary || props.secondary) ? ColorGrey : 'white'} !important;
 `;
 
 export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})``;
@@ -153,9 +179,9 @@ export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})``;
 export const Button = styled(LinkContainer).attrs({ as: 'button'})`
   display: flex;
   align-items: center;
-  background: none;
+  font-size: ${({ size }) => size};
   border: none;
-  height: 24px;
+  height: ${({ height }) => height};
 `;
 
 export const MenuButton = styled(Button)`
@@ -167,11 +193,17 @@ export const MenuButton = styled(Button)`
 `;
 
 export const GridContainer = styled.div`
-  display: flex;
+  display: ${(props) => props.grid ? 'grid' : 'flex'};
+  grid-template-columns: ${({ columns }) => columns};
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   width: 100%;
+
+  @media (max-width: 768px) {
+    display: ${(props) => props.responsive ? 'flex' : ''};
+    grid-template-columns: ${(props) => props.responsiveGrid ? 'repeat(2, 1fr)' : ''};
+  }
 `;
 
 export const GridItem = styled.div`
@@ -179,8 +211,14 @@ export const GridItem = styled.div`
   flex-direction: column;
   border-radius: .5rem;
   width: 100%;
-  max-width: 380px;
+  max-width: ${(props) => props.maxWidth ? '380px' : ''};
   border: ${(props) => props.border ? `1px solid ${Secondary}` : ''};
+
+  @media (max-width: 1024px) {
+    padding-left: ${(props) => props.responsive ? '1rem' : ''};
+    padding-right: ${(props) => props.responsive ? '1rem' : ''};
+    width: ${(props) => props.responsive ? '100%' : ''};
+  };
 `;
 
 export const GridDesc = styled.div`

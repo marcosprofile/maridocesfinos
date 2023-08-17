@@ -6,6 +6,7 @@ import {
   GridContainer,
   PaddingContainer,
   RouterLink,
+  GridItem,
 } from '../styles/Global.styled';
 
 import { productDetails } from '../utils/Data';
@@ -27,9 +28,9 @@ const MyProducts = () => {
         whileInView="visible"
       >
         {productDetails.map((product) => (
-          <PaddingContainer responsive key={product.id}>
+          <GridItem border maxWidth responsive key={product.id}>
             <Products data={product} />
-          </PaddingContainer>
+          </GridItem>
         ))}
       </GridContainer>
       <FlexContainer
