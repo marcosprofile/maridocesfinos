@@ -42,7 +42,7 @@ export const PaddingContainer = styled.div`
   
   @media (max-width: 768px) {
     padding-top: ${(props) => props.responsive ? '4rem' : ''};
-    padding-bottom: ${(props) => props.responsive ? '' : ''};
+    padding-bottom: ${(props) => props.responsive ? '4rem' : ''};
     width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
@@ -160,6 +160,7 @@ export const Image = styled.img`
 
   @media (max-width: 768px) {
     height: ${(props) => props.respWidth ? '40px' : ''};
+    height: ${(props) => props.respBottom ? '120px' : ''};
   };
 `;
 

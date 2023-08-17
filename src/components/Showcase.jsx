@@ -108,7 +108,7 @@ const Showcase = () => {
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>
-      <Image height="300px" src={BottomImage} />
+      <Image respBottom height="300px" src={BottomImage} />
     </FlexContainer>
   )
 }
