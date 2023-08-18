@@ -83,18 +83,6 @@ export const NavBar = styled(FlexContainer).attrs({ as: 'nav' })`
   }
 `;
 
-export const TextColor = styled.div`
-  color: ${(props) => props.grey ? ColorGrey : 'white'};
-  margin: ${({ margin }) => margin};
-  padding: ${({ padding }) => padding};
-  font-size: ${({ size }) => size};
-  font-weight: ${({ weight }) => weight};
-  line-height: ${({ lineHeight }) => lineHeight};
-  font-style: ${({ fontStyle }) => fontStyle};
-  letter-spacing: ${({ letterSpacing }) => letterSpacing};
-  text-transform: ${({ fontTransform }) => fontTransform};
-`;
-
 export const Heading = styled(PaddingContainer)`
   color: ${(props) => props.grey ? ColorGrey : 'white'};
   font-weight: ${({ weight }) => weight};
@@ -148,10 +136,6 @@ export const Heading = styled(PaddingContainer)`
   };
 `;
 
-export const Title = styled(TextColor).attrs({ as: 'h2'})``;
-
-export const Paragraph = styled(TextColor).attrs({ as: 'p'})``;
-
 export const Image = styled.img`
   width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -165,24 +149,32 @@ export const Image = styled.img`
 `;
 
 export const LinkContainer = styled(FlexContainer)`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: .5rem;
   font-size: 18px;
   font-weight: 500;
   background-color: ${props => props.primary ? Primary : props.secondary ? Secondary : 'transparent'} !important;
   color: ${props => (props.primary || props.secondary) ? ColorGrey : 'white'} !important;
+  transition: all .2s linear;
+
+  &:hover {
+    transform: scale(.95);
+  }
+
+  @media (max-width: 600px) {
+    width: ${(props) => props.respLink ? '100%' : ''};
+  };
 `;
 
-export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})``;
+export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
+  @media (max-width: 600px) {
+    width: ${(props) => props.respLink ? '100%' : ''};
+  };
+`;
 
-export const Button = styled(LinkContainer).attrs({ as: 'button'})`
-  display: flex;
-  align-items: center;
+export const Button = styled(RouterLink).attrs({ as: 'button'})`
   font-size: ${({ size }) => size};
-  border: none;
   height: ${({ height }) => height};
+  border: none;
+  cursor: ${(props) => props.default ? 'default' : 'pointer'} !important;
 `;
 
 export const MenuButton = styled(Button)`
@@ -202,7 +194,6 @@ export const GridContainer = styled.div`
   width: 100%;
 
   @media (max-width: 768px) {
-    display: ${(props) => props.responsive ? 'flex' : ''};
     grid-template-columns: ${(props) => props.responsiveGrid ? 'repeat(2, 1fr)' : ''};
   }
 `;
@@ -214,11 +205,9 @@ export const GridItem = styled.div`
   width: 100%;
   max-width: ${(props) => props.maxWidth ? '380px' : ''};
   border: ${(props) => props.border ? `1px solid ${Secondary}` : ''};
-
-  @media (max-width: 1024px) {
-    padding-left: ${(props) => props.responsive ? '1rem' : ''};
-    padding-right: ${(props) => props.responsive ? '1rem' : ''};
-    width: ${(props) => props.responsive ? '100%' : ''};
+  
+  @media (max-width: 600px) {
+    max-width: ${(props) => props.maxWidth ? '100%' : ''};
   };
 `;
 
@@ -230,3 +219,21 @@ export const GridDesc = styled.div`
     padding: 1.5rem;
   };
 `;
+
+export const Icon = styled(FlexContainer)`
+  color: ${(props) => props.point ? '#5D6AFB' : ''};
+`;
+
+export const ContainerContact = styled(FlexContainer)`
+  width: 100%;
+  max-width: 1180px;
+  padding: 70px 150px;
+  background-color: #FFF;
+  border-radius: 1rem;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
+`;
+
+export const StyledFooter = styled(FlexContainer).attrs({ as: 'footer'})``;

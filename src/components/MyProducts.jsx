@@ -19,7 +19,7 @@ const MyProducts = () => {
     <PaddingContainer
       top="3rem"
       bottom="8rem"
-      responsive
+      width="100%"
     >
       <GridContainer
         as={motion.div}
@@ -28,7 +28,7 @@ const MyProducts = () => {
         whileInView="visible"
       >
         {productDetails.map((product) => (
-          <GridItem border maxWidth responsive key={product.id}>
+          <GridItem border maxWidth responsiveItem key={product.id}>
             <Products data={product} />
           </GridItem>
         ))}
@@ -42,8 +42,11 @@ const MyProducts = () => {
           bottom="1.5rem"
           left="3rem"
           right="3rem"
+          justify="center"
+          radius=".5rem"
           href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento"
           target="_blank"
+          respLink
           primary
         >
           Solicitar orçamento

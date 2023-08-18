@@ -16,8 +16,8 @@ const List = () => {
     <PaddingContainer
       top="3rem"
       bottom="8rem"
-      left="240px"
-      right="240px"
+      left="1rem"
+      right="1rem"
       responsive
       bgWhite
     >

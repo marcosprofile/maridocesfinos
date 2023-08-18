@@ -5,39 +5,152 @@ import {
   FlexContainer,
   Heading,
   PaddingContainer,
+  Image,
+  Icon,
+  Button,
+  LinkContainer,
+  RouterLink,
 } from '../styles/Global.styled';
+
+import { BsFillRecordFill } from 'react-icons/bs';
 
 import {
   fadeInLeftVariant,
-  /* fadeInRightVariant, */
+  fadeInRightVariant,
 } from '../utils/Variants';
+
+import RightImage from '../assets/confeiteira.png';
 
 const AboutMe = () => {
   return (
-    <PaddingContainer
-      top="8rem"
-      bottom="8rem"
-      left="240px"
-      right="240px"
-      responsive
-    >
-      <FlexContainer
-        as={motion.div}
-        variants={fadeInLeftVariant}
-        initial="hidden"
-        whileInView="visible"
-        justify="center"
+    <FlexContainer direction="column">
+      <PaddingContainer
+        top="8rem"
+        bottom="6rem"
+        left="240px"
+        right="240px"
+        responsive
       >
-        <Heading
-          as="h1"
-          size="h1"
-          weight="bold"
-          grey
+        <FlexContainer
         >
-          SOBRE MIM
-        </Heading>
-      </FlexContainer>
-    </PaddingContainer>
+          <FlexContainer
+            as={motion.div}
+            variants={fadeInLeftVariant}
+            initial="hidden"
+            whileInView="visible"
+            direction="column"
+            align="flex-start"
+            width="100%"
+            gap="1.5rem"
+          >
+            <Button
+              size="14px"
+              top=".5rem"
+              right="1rem"
+              bottom=".5rem"
+              left="1rem"
+              radius=".5rem"
+              default
+              secondary
+            >
+              QUEM VAI COZINHAR?
+            </Button>
+            <Heading
+              as="h2"
+              size="h2"
+              weight="bold"
+              bottom="0"
+              grey
+            >
+              Vou preparar e embalar pessoalmente tudo lindamente para o seu evento.
+            </Heading>
+            <FlexContainer gap=".5rem" >
+              <Icon
+                top=".25rem"
+                point
+              >
+                <BsFillRecordFill />
+              </Icon>
+              <Heading
+                as="p"
+                size="p"
+                weight="400"
+                bottom="0"
+                grey
+              >
+                Vou aconselhar na escolha dos doces e ter uma ideia fora do padrão
+              </Heading>
+            </FlexContainer>
+            <FlexContainer gap=".5rem" >
+              <Icon
+                top=".25rem"
+                point
+              >
+                <BsFillRecordFill />
+              </Icon>
+              <Heading
+                as="p"
+                size="p"
+                weight="400"
+                bottom="0"
+                grey
+              >
+                Vou preparar doces para o seu evento que com certeza todos vão gostar
+              </Heading>
+            </FlexContainer>
+            <FlexContainer gap=".5rem" >
+              <Icon
+                top=".25rem"
+                point
+              >
+                <BsFillRecordFill />
+              </Icon>
+              <Heading
+                as="p"
+                size="p"
+                weight="400"
+                bottom="0"
+                grey
+              >
+                Vou embalar tudo de maneira organizada e bonita, se você quiser fazer um belo presente.
+              </Heading>
+            </FlexContainer>
+            <FlexContainer
+              top="2.5rem"
+              align="center" 
+              gap="1rem"
+              respAction
+            >
+              <RouterLink respLink href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20pedido" target="_blank">
+                <LinkContainer
+                  top="1.5rem"
+                  bottom="1.5rem"
+                  left="2.5rem"
+                  right="2.5rem"
+                  radius=".5rem"
+                  justify="center"
+                  respLink
+                  primary
+                >
+                  Faça uma pergunta a Mari
+                </LinkContainer>
+              </RouterLink>
+            </FlexContainer>
+          </FlexContainer>
+          <FlexContainer
+            as={motion.div}
+            variants={fadeInRightVariant}
+            initial="hidden"
+            whileInView="visible"
+            justify="center"
+            width="100%"
+            respImg
+          >
+            <Image radius="1rem" src={RightImage} draggable="false" />
+          </FlexContainer>
+        </FlexContainer>
+      </PaddingContainer>
+    </FlexContainer>
   )
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import {
@@ -8,7 +7,7 @@ import {
   Heading,
   GridContainer,
   GridItem,
-  LinkContainer,
+  RouterLink,
 } from '../styles/Global.styled';
 
 import { BsInstagram } from 'react-icons/bs'
@@ -23,8 +22,8 @@ import {
 const MyPhotos = () => {
   return (
     <PaddingContainer
-      top="8rem"
-      bottom="8rem"
+      top="4rem"
+      bottom="4rem"
       left="2rem"
       right="2rem"
       responsive
@@ -75,26 +74,27 @@ const MyPhotos = () => {
         <FlexContainer
           top="2.5rem"
           justify="center"
+          respAction
         >
-          <Link to="https://instagram.com/maridocessfinos?igshid=MzRlODBiNWFlZA==" target="_blank">
-            <LinkContainer
-              top="1.5rem"
-              bottom="1.5rem"
-              left="2.5rem"
-              right="2.5rem"
-              align="center"
-              gap=".5rem"
-              primary
-            >
-              <BsInstagram />
-              Instagram
-            </LinkContainer>
-          </Link>
+          <RouterLink
+            top="1.5rem"
+            bottom="1.5rem"
+            left="2.5rem"
+            right="2.5rem"
+            align="center"
+            gap=".5rem"
+            radius=".5rem"
+            justify="center"
+            href="https://instagram.com/maridocessfinos?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            respLink
+            primary
+          >
+            <BsInstagram />
+            Instagram
+          </RouterLink>
         </FlexContainer>
       </FlexContainer>
-      <GridContainer>
-        
-      </GridContainer>
     </PaddingContainer>
   )
 }

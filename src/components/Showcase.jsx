@@ -24,7 +24,7 @@ const Showcase = () => {
     <FlexContainer direction="column" bgBlue>
       <PaddingContainer
         top="8rem"
-        bottom="8rem"
+        bottom="6rem"
         left="240px"
         right="240px"
         responsive
@@ -43,13 +43,14 @@ const Showcase = () => {
             gap="1.5rem"
           >
             <Button
-              secondary
-              size="12px"
-              weight="bold"
+              size="14px"
               top=".5rem"
               right="1rem"
               bottom=".5rem"
               left="1rem"
+              radius=".5rem"
+              default
+              secondary
             >
               DELICIOSO
             </Button>
@@ -75,12 +76,15 @@ const Showcase = () => {
               gap="1rem"
               respAction
             >
-              <Link to="/catalogo">
+              <Link className="link" to="/catalogo">
                 <LinkContainer
                   top="1.5rem"
                   bottom="1.5rem"
                   left="2.5rem"
                   right="2.5rem"
+                  radius=".5rem"
+                  justify="center"
+                  respLink
                   primary
                 >
                   Ir para o catálogo
