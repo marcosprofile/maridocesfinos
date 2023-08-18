@@ -52,7 +52,7 @@ const MyPhotos = () => {
           Veja fotos de pedidos reais do nosso instagram
         </Heading>
         <PaddingContainer
-          top="2rem"
+          marginTop="4rem"
           width="100%"
         >
           <GridContainer

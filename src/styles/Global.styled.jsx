@@ -28,6 +28,7 @@ export const PaddingContainer = styled.div`
   padding-bottom: ${({ bottom }) => bottom};
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
+  margin-top: ${({ marginTop }) => marginTop};
 
   @media (max-width: 1440px) {
     padding-left: ${(props) => props.responsive ? '3rem' : ''};
