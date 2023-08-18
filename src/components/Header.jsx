@@ -57,7 +57,13 @@ const Header = () => {
             </LinkContainer>
           </Link>
 
-          <Button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ContactModal">
+          <Button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#ContactModal"
+            scale
+          >
             Contato
           </Button>
         </NavBar>

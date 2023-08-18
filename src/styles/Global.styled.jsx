@@ -176,6 +176,10 @@ export const Button = styled(RouterLink).attrs({ as: 'button'})`
   height: ${({ height }) => height};
   border: none;
   cursor: ${(props) => props.default ? 'default' : 'pointer'} !important;
+
+  &:hover {
+    transform: ${(props) => props.scale ? 'scale(.95)' : 'none'} !important;
+  }
 `;
 
 export const MenuButton = styled(Button)`
