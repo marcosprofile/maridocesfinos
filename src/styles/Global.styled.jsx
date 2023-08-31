@@ -143,9 +143,14 @@ export const Image = styled.img`
   border-radius: ${({ radius }) => radius};
   object-fit: cover;
 
+  @media (max-width: 1024px) {
+    height: ${(props) => props.respHeight ? '328px' : ''};
+  }
+
   @media (max-width: 768px) {
     height: ${(props) => props.respWidth ? '40px' : ''};
     height: ${(props) => props.respBottom ? '120px' : ''};
+    height: ${(props) => props.respHeight ? '200px' : ''};
   };
 `;
 
@@ -198,7 +203,7 @@ export const GridContainer = styled.div`
   gap: 1rem;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: ${(props) => props.responsiveGrid ? 'repeat(2, 1fr)' : ''};
   }
 `;
@@ -207,6 +212,7 @@ export const GridItem = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: .5rem;
+  overflow: hidden;
   width: 100%;
   max-width: ${(props) => props.maxWidth ? '380px' : ''};
   border: ${(props) => props.border ? `1px solid ${Secondary}` : ''};

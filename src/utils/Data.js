@@ -1,6 +1,12 @@
 /* List items */
 
+// MyProducts Photos
 import Image1 from '../assets/product_1.png';
+import Image2 from '../assets/product_2.png';
+import Image3 from '../assets/product_3.png';
+import Image4 from '../assets/product_6.png';
+import Image5 from '../assets/product_7.png';
+import Image6 from '../assets/product_9.png';
 
 // Instagram Photos
 import Insta1 from '../assets/product_1.png';
@@ -63,35 +69,35 @@ export const productDetails = [
   },
   {
     id: 1,
-    product_image: Image1,
+    product_image: Image2,
     product_name: 'Second Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
   },
   {
     id: 2,
-    product_image: Image1,
+    product_image: Image3,
     product_name: 'Third Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
   },
   {
     id: 3,
-    product_image: Image1,
+    product_image: Image4,
     product_name: 'Fourth Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
   },
   {
     id: 4,
-    product_image: Image1,
+    product_image: Image5,
     product_name: 'Fifth Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
   },
   {
     id: 5,
-    product_image: Image1,
+    product_image: Image6,
     product_name: 'Sixth Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
