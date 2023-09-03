@@ -18,6 +18,9 @@ import Insta6 from '../assets/product_6.png';
 import Insta7 from '../assets/product_7.png';
 import Insta8 from '../assets/product_8.png';
 import Insta9 from '../assets/product_9.png';
+import Insta10 from '../assets/product_10.png';
+import Insta11 from '../assets/product_11.png';
+import Insta12 from '../assets/product_12.png';
 
 
 export const Gallery = [
@@ -56,6 +59,18 @@ export const Gallery = [
   {
     id: 8,
     image: Insta9
+  },
+  {
+    id: 9,
+    image: Insta10
+  },
+  {
+    id: 10,
+    image: Insta11
+  },
+  {
+    id: 11,
+    image: Insta12
   },
 ]
 
@@ -101,5 +116,56 @@ export const productDetails = [
     product_name: 'Sixth Product Name',
     desc: 'Description of product',
     price: 'R$ 20,00'
+  },
+]
+
+export const brigadeirosGourmetDetails = [
+  {
+    id: 0,
+    product_name: 'Merengue de limão',
+    desc: '',
+    price: 'R$ 2,80'
+  },
+  {
+    id: 1,
+    product_name: 'Romeu e julieta',
+    desc: '',
+    price: 'R$ 2,70'
+  },
+  {
+    id: 2,
+    product_name: 'Bicho de pé',
+    desc: '',
+    price: 'R$ 2,50'
+  },
+  {
+    id: 3,
+    product_name: 'Creme Brûlée',
+    desc: '',
+    price: 'R$ 2,80'
+  },
+  {
+    id: 4,
+    product_name: 'Limão Bloond',
+    desc: '',
+    price: 'R$ 3,20'
+  },
+  {
+    id: 5,
+    product_name: 'Côco com abacaxi',
+    desc: '',
+    price: 'R$ 3,25'
+  },
+  {
+    id: 6,
+    product_name: 'Uva Cristal',
+    desc: '',
+    price: 'R$ 3,65'
+  },
+  {
+    id: 7,
+    product_name: 'Oreo',
+    desc: '',
+    price: 'R$ 3,50'
   },
 ]

@@ -60,15 +60,7 @@ const Showcase = () => {
               weight="bold"
               bottom="0"
             >
-              Doces finos e cupcakes a partir de R$20 com entrega em São Paulo
-            </Heading>
-            <Heading
-              as="h4"
-              size="h4"
-              weight="400"
-              bottom="0"
-            >
-              Prepararemos em 3 horas no dia do pedido.<br></br>Entrega de carro.
+              Doces finos para casamentos e festas em geral. Com entrega em São Paulo e Região
             </Heading>
             <FlexContainer
               top="2.5rem"

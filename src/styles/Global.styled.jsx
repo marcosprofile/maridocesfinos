@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {
   Primary,
   Secondary,
+  StrokeBorder,
   ColorGrey,
   BlueColor,
   LightGrey,
@@ -28,7 +29,9 @@ export const PaddingContainer = styled.div`
   padding-bottom: ${({ bottom }) => bottom};
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
+  padding: ${({ padding }) => padding};
   margin-top: ${({ marginTop }) => marginTop};
+  margin-bottom: ${({ marginBottom }) => marginBottom};
 
   @media (max-width: 1440px) {
     padding-left: ${(props) => props.responsive ? '3rem' : ''};
@@ -44,6 +47,7 @@ export const PaddingContainer = styled.div`
   @media (max-width: 768px) {
     padding-top: ${(props) => props.responsive ? '4rem' : ''};
     padding-bottom: ${(props) => props.responsive ? '4rem' : ''};
+    padding: ${(props) => props.responsivePadding ? '1rem' : '' };
     width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
@@ -52,8 +56,11 @@ export const FlexContainer = styled(PaddingContainer)`
   display: flex;
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
+  width: ${({ width }) => width};
+  max-width: ${({ maxWidth }) => maxWidth};
   align-items: ${({ align }) => align};
   border-radius: ${({ radius }) => radius};
+  border: ${(props) => props.border ? `1px solid ${StrokeBorder}` : ''};
   gap: ${({ gap }) => gap};
 
   @media (max-width: 1175px) {
@@ -198,13 +205,18 @@ export const MenuButton = styled(Button)`
 export const GridContainer = styled.div`
   display: ${(props) => props.grid ? 'grid' : 'flex'};
   grid-template-columns: ${({ columns }) => columns};
+  margin-top: ${({ top }) => top};
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: ${({ gap }) => gap};
   width: 100%;
 
   @media (max-width: 1024px) {
     grid-template-columns: ${(props) => props.responsiveGrid ? 'repeat(2, 1fr)' : ''};
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: ${(props) => props.responsiveGrid ? '1fr' : ''}
   }
 `;
 
@@ -245,6 +257,45 @@ export const ContainerContact = styled(FlexContainer)`
   @media (max-width: 768px) {
     padding: 1.5rem;
   }
+`;
+
+export const DivImage = styled.div`
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  @media (max-width: 768px) {
+    height: 228px;
+  }
+`;
+
+export const Banner = styled(FlexContainer)`
+  display: grid;
+  place-items: center;
+  width: 100%;
+  background: #00000030;
+  backdrop-filter: blur(.75rem);
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+
+  position: absolute;
+  bottom: 30%;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+`
+
+export const Price = styled.div`
+  background: #5663FB15;
+  color: #5663FB;
+  font-weight: bold;
+  padding: .25rem .75rem;
+  border-radius: 8rem;
 `;
 
 export const StyledFooter = styled(FlexContainer).attrs({ as: 'footer'})``;

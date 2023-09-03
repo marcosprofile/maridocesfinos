@@ -62,7 +62,7 @@ const AboutMe = () => {
               bottom="0"
               grey
             >
-              Vou preparar e embalar pessoalmente tudo lindamente para o seu evento.
+              Vou preparar e embalar tudo lindamente para o seu evento.
             </Heading>
             <FlexContainer gap=".5rem" >
               <Icon

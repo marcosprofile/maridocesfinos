@@ -62,6 +62,7 @@ const MyPhotos = () => {
             whileInView="visible"
             responsiveGrid
             grid
+            gap="1.5rem"
             columns="repeat(3, 1fr)"
           >
             {Gallery.map((gallery) => (

@@ -65,7 +65,7 @@ const Contact = () => {
                 bottom="0"
                 grey
               >
-                Retornaremos de volta dentro de 15 minutos para esclarecer seus desejos
+                Retornaremos de volta assim que possível para esclarecer seus desejos
               </Heading>
               <FlexContainer
                 top="40px"
