@@ -16,21 +16,17 @@ import {
   FaWhatsapp,
 } from 'react-icons/fa6';
 
-import TopImage from '../assets/top.png';
-
 import {
   fadeInTopVariant,
 } from '../utils/Variants';
 
 const Contact = () => {
   return (
-    <FlexContainer direction="column" bgBlue>
-      <Image respBottom height="300px" src={TopImage} />
+    <FlexContainer direction="column">
       <PaddingContainer
         top="4rem"
         bottom="4rem"
         responsive
-        bgBlue
       >
         <FlexContainer>
           <FlexContainer

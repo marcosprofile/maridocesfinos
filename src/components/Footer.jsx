@@ -16,15 +16,14 @@ const Footer = () => {
       align="center"
       gap="2rem"
       top="2rem"
-      bgBlue
     >
       <Heading
         as="p"
         size="p"
+        grey
       >
         &copy; Mary Doces Finos
       </Heading>
-      <Image respBottom width="100%" height="300px" src={BottomImage} />
     </StyledFooter>
   )
 }

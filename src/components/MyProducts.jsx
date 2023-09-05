@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion'
 
 import {
   GridContainer,
@@ -23,6 +24,11 @@ import {
   pettyVerre
 } from './../utils/Data';
 
+import {
+  fadeInLeftVariant,
+  fadeInRightVariant,
+} from '../utils/Variants';
+
 const MyProducts = () => {
   return (
     <PaddingContainer
@@ -37,11 +43,15 @@ const MyProducts = () => {
       >
         {/* Product 1 */}
         <FlexContainer
+          as={motion.div}
+          variants={fadeInLeftVariant}
+          initial="hidden"
+          whileInView="visible"
           responsivePadding
           border
           radius="1.5rem"
           width="100%"
-          maxWidth="748px"
+          maxWidth="800px"
           padding="2rem"
           direction="column"
           gap="1.5rem"
@@ -100,11 +110,15 @@ const MyProducts = () => {
         
         {/* Product 2 */}
         <FlexContainer
+          as={motion.div}
+          variants={fadeInRightVariant}
+          initial="hidden"
+          whileInView="visible"
           responsivePadding
           border
           radius="1.5rem"
           width="100%"
-          maxWidth="748px"
+          maxWidth="800px"
           padding="2rem"
           direction="column"
           gap="1.5rem"
@@ -163,11 +177,15 @@ const MyProducts = () => {
 
         {/* Product 3 */}
         <FlexContainer
+          as={motion.div}
+          variants={fadeInLeftVariant}
+          initial="hidden"
+          whileInView="visible"
           responsivePadding
           border
           radius="1.5rem"
           width="100%"
-          maxWidth="748px"
+          maxWidth="800px"
           padding="2rem"
           direction="column"
           gap="1.5rem"

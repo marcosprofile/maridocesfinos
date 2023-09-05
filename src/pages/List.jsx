@@ -42,7 +42,7 @@ const List = () => {
           size="h4"
           grey
         >
-          Para quaisquer eventos e pessoas queridas para você
+          Esse  é o cardápio com os doces mais pedidos por aqui
         </Heading>
         <MyProducts />
       </FlexContainer>

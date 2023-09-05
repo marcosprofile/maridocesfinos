@@ -253,6 +253,7 @@ export const ContainerContact = styled(FlexContainer)`
   padding: 70px 150px;
   background-color: #FFF;
   border-radius: 1rem;
+  box-shadow: 0px 10px 25px 0px rgba(195, 200, 215, 0.70);
 
   @media (max-width: 768px) {
     padding: 1.5rem;

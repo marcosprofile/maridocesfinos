@@ -14,6 +14,9 @@ import {
 
 import { BsFillRecordFill } from 'react-icons/bs';
 
+import BottomImage from '../assets/bottom.png';
+import TopImage from '../assets/top.png';
+
 import {
   fadeInLeftVariant,
   fadeInRightVariant,
@@ -23,13 +26,15 @@ import RightImage from '../assets/confeiteira.png';
 
 const AboutMe = () => {
   return (
-    <FlexContainer direction="column">
+    <FlexContainer direction="column" bgBlue>
+      <Image respBottom height="300px" src={TopImage} />
       <PaddingContainer
         top="8rem"
         bottom="6rem"
         left="240px"
         right="240px"
         responsive
+        bgBlue
       >
         <FlexContainer
         >
@@ -60,7 +65,6 @@ const AboutMe = () => {
               size="h2"
               weight="bold"
               bottom="0"
-              grey
             >
               Vou preparar e embalar tudo lindamente para o seu evento.
             </Heading>
@@ -76,7 +80,6 @@ const AboutMe = () => {
                 size="p"
                 weight="400"
                 bottom="0"
-                grey
               >
                 Vou aconselhar na escolha dos doces e ter uma ideia fora do padrão
               </Heading>
@@ -93,7 +96,6 @@ const AboutMe = () => {
                 size="p"
                 weight="400"
                 bottom="0"
-                grey
               >
                 Vou preparar doces para o seu evento que com certeza todos vão gostar
               </Heading>
@@ -110,7 +112,6 @@ const AboutMe = () => {
                 size="p"
                 weight="400"
                 bottom="0"
-                grey
               >
                 Vou embalar tudo de maneira organizada e bonita, se você quiser fazer um belo presente.
               </Heading>
@@ -150,6 +151,7 @@ const AboutMe = () => {
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>
+      <Image respBottom height="300px" src={BottomImage} />
     </FlexContainer>
   )
 }
