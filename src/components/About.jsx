@@ -22,6 +22,10 @@ const About = () => {
   return (
     <FlexContainer direction="column" bgBlue>
       <FlexContainer
+        as={motion.div}
+        variants={fadeInTopVariant}
+        initial="hidden"
+        whileInView="visible"
         justify="center"
         top="3rem"
       >
