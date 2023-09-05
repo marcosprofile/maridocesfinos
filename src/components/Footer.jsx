@@ -2,11 +2,8 @@ import React from 'react';
 
 import {
   Heading,
-  Image,
   StyledFooter,
 } from '../styles/Global.styled';
-
-import BottomImage from '../assets/bottom.png';
 
 const Footer = () => {
   return (

@@ -15,7 +15,7 @@ const List = () => {
   return (
     <PaddingContainer
       top="3rem"
-      bottom="8rem"
+      bottom="2rem"
       left="1rem"
       right="1rem"
       responsive

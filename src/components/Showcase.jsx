@@ -100,11 +100,11 @@ const Showcase = () => {
             width="100%"
             respImg
           >
-            <Image radius="1rem" src={RightImage} />
+            <Image radius="1rem" src={RightImage} draggable="false" />
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>
-      <Image respBottom height="300px" src={BottomImage} />
+      <Image respBottom height="340px" src={BottomImage} draggable="false" />
     </FlexContainer>
   )
 }

@@ -1,13 +1,3 @@
-/* List items */
-
-// MyProducts Photos
-import Image1 from '../assets/product_1.png';
-import Image2 from '../assets/product_2.png';
-import Image3 from '../assets/product_3.png';
-import Image4 from '../assets/product_6.png';
-import Image5 from '../assets/product_7.png';
-import Image6 from '../assets/product_9.png';
-
 // Instagram Photos
 import Insta1 from '../assets/product_1.png';
 import Insta2 from '../assets/product_2.png';
@@ -74,6 +64,10 @@ export const Gallery = [
   },
 ]
 
+
+/* List items */
+
+/* Product 1 */
 export const brigadeirosGourmetDetails = [
   {
     id: 0,
@@ -125,6 +119,7 @@ export const brigadeirosGourmetDetails = [
   },
 ]
 
+/* Product 2 */
 export const bombons = [
   {
     id: 0,
@@ -176,6 +171,7 @@ export const bombons = [
   },
 ]
 
+/* Product 3 */
 export const pettyVerre = [
   {
     id: 0,
@@ -218,5 +214,155 @@ export const pettyVerre = [
     product_name: 'Pistáche',
     product_desc: 'Tiramissu cremoso, cream cheese, conhaque e chantily.',
     price: 'R$ 6,80'
+  },
+]
+
+/* Product 4 */
+export const pettyTarte = [
+  {
+    id: 0,
+    product_name: 'Maracujá',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,90'
+  },
+  {
+    id: 1,
+    product_name: 'Limão',
+    product_desc: '[Consultar informações]',
+    price: 'R$3,80'
+  },
+  {
+    id: 2,
+    product_name: 'Frutas vermelhas',
+    product_desc: 'Geléia de frutas vermelhas e mousse de limão siciliano.',
+    price: 'R$ 4,30'
+  },
+  {
+    id: 3,
+    product_name: 'Avelã',
+    product_desc: 'Nutella e ganache de avelã.',
+    price: 'R$ 3,40'
+  },
+  {
+    id: 4,
+    product_name: 'Banoffe',
+    product_desc: 'Doce de leite, banana e merenge suiço.',
+    price: 'R$ 3,80'
+  },
+  {
+    id: 5,
+    product_name: 'Floresta Negra',
+    product_desc: 'Creme de cereja.',
+    price: 'R$ 3,80'
+  },
+  {
+    id: 6,
+    product_name: 'Tortinha de Amarula',
+    product_desc: 'Ganache de licor de amarula.',
+    price: 'R$ 3,80'
+  },
+  {
+    id: 7,
+    product_name: 'Phisalis',
+    product_desc: 'Trufa amarga com phisalis.',
+    price: 'R$ 4,10'
+  },
+]
+
+/* Product 5 */
+export const copinhosTrufados = [
+  {
+    id: 0,
+    product_name: 'Romeu e Julieta',
+    product_desc: 'Copinho chocolate branco ao leite com ganache de cream cheese e goiabada.',
+    price: 'R$ 3,90'
+  },
+  {
+    id: 1,
+    product_name: 'Blueberry Cremoso',
+    product_desc: 'Copinho chocolate branco com ganache de blueberry.',
+    price: 'R$3,50'
+  },
+  {
+    id: 2,
+    product_name: 'Phisalis',
+    product_desc: 'Copinho chocolate ao leite, chocolate amargo e ganache.',
+    price: 'R$ 5,20'
+  },
+  {
+    id: 3,
+    product_name: 'Caixeta de frutas',
+    product_desc: 'Creme de maracujá, cereja marrasquino, nozes e ganache.',
+    price: 'R$ 3,90'
+  },
+  {
+    id: 4,
+    product_name: 'Caixeta de Abacaxi com Côco',
+    product_desc: 'Caixeta de chocolate ao leite, creme de côco e abacaxi finalizado com petalas de côco.',
+    price: 'R$ 3,50'
+  },
+  {
+    id: 5,
+    product_name: 'Copinho Cremoso de Damasco',
+    product_desc: 'Cream cheese.',
+    price: 'R$ 4,50'
+  },
+  {
+    id: 6,
+    product_name: 'Caixeta de Côco com Cereja',
+    product_desc: 'Creme de Côco, chocolate ao leite e cereja para decorar.',
+    price: 'R$ 3,50'
+  },
+  {
+    id: 7,
+    product_name: 'Bananinha Elegante',
+    product_desc: 'Creme de banana e nutella.',
+    price: 'R$ 3,40'
+  },
+]
+
+/* Product 6 */
+export const classicosFondados = [
+  {
+    id: 0,
+    product_name: 'Camafeu',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,90'
+  },
+  {
+    id: 1,
+    product_name: 'Expressinho',
+    product_desc: '[Consultar informações]',
+    price: 'R$3,50'
+  },
+  {
+    id: 2,
+    product_name: 'Presentinho de Limão',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,50'
+  },
+  {
+    id: 3,
+    product_name: 'Olho de Sogra',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,50'
+  },
+  {
+    id: 4,
+    product_name: 'Olho de Sogro',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,50'
+  },
+  {
+    id: 5,
+    product_name: 'Olho de Tigre',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 3,60'
+  },
+  {
+    id: 6,
+    product_name: 'Morango ao Champanhe',
+    product_desc: '[Consultar informações]',
+    price: 'R$ 4,20'
   },
 ]

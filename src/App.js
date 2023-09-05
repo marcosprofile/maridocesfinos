@@ -4,8 +4,10 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/Theme';
 import Home from './pages/Home';
 import List from './pages/List';
+import Info from './pages/Info';
 import Header from './components/Header';
 import { MainBody } from './styles/Global.styled';
+import Footer from './components/Footer';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -27,8 +29,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalogo" element={<List />} />
+            <Route path="/sobre" element={<Info />} />
           </Routes>
         </MainBody>
+        <Footer />
       </Router>
     </ThemeProvider>
   );

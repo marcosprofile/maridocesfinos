@@ -151,7 +151,7 @@ const AboutMe = () => {
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>
-      <Image respBottom height="300px" src={BottomImage} />
+      <Image respBottom height="340px" src={BottomImage} />
     </FlexContainer>
   )
 }

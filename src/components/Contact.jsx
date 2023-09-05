@@ -5,7 +5,6 @@ import {
   FlexContainer,
   PaddingContainer,
   Heading,
-  Image,
   RouterLink,
   ContainerContact,
   Icon,
@@ -25,7 +24,7 @@ const Contact = () => {
     <FlexContainer direction="column">
       <PaddingContainer
         top="4rem"
-        bottom="4rem"
+        bottom="8rem"
         responsive
       >
         <FlexContainer>
