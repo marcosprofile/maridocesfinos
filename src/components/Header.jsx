@@ -111,7 +111,6 @@ const Header = () => {
               </Heading>
             </Link>
             <PaddingContainer height="2rem"></PaddingContainer>
-            <PaddingContainer height="2rem"></PaddingContainer>
             <Link to="/catalogo" onClick={() => { closeMenu(); window.location.href = '/sobre'; }}>
               <Heading
                 as="h1"
