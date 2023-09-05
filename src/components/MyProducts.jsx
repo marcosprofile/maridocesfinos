@@ -100,7 +100,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -167,7 +171,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -234,7 +242,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -301,7 +313,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -368,7 +384,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -435,7 +455,11 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" justify="center">
+          <FlexContainer
+            marginTop="2rem"
+            justify="center"
+            height="auto"
+          >
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -595,7 +619,7 @@ const MyProducts = () => {
               align="center" 
               gap="1rem"
               direction="column"
-              respAction
+              height="auto"
             >
               <RouterLink
                 top="1.5rem"
