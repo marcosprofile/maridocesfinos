@@ -37,7 +37,6 @@ import { BsFillRecordFill } from 'react-icons/bs'
 import {
   fadeInLeftVariant,
   fadeInRightVariant,
-  fadeInTopVariant,
 } from '../utils/Variants';
 
 const MyProducts = () => {
