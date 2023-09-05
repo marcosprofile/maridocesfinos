@@ -100,7 +100,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -167,7 +167,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -234,7 +234,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -301,7 +301,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -368,7 +368,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -435,7 +435,7 @@ const MyProducts = () => {
             ))}
           </GridContainer>
 
-          <FlexContainer marginTop="2rem" marginBottom="2rem" justify="center">
+          <FlexContainer marginTop="2rem" justify="center">
             <RouterLink
               top="1.5rem"
               bottom="1.5rem"
@@ -591,14 +591,13 @@ const MyProducts = () => {
               </Heading>
             </FlexContainer>
             <FlexContainer
-              top="2.5rem"
+              marginTop="2.5rem"
               align="center" 
               gap="1rem"
               direction="column"
               respAction
             >
               <RouterLink
-                
                 top="1.5rem"
                 bottom="1.5rem"
                 left="3rem"
