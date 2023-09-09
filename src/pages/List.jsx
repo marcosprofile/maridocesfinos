@@ -1,11 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 import {
   FlexContainer,
   Heading,
   PaddingContainer,
+  LinkContainer,
 } from '../styles/Global.styled';
+
+// BsArrowLeftCircle
+import { BsArrowLeftCircle } from "react-icons/bs";
 
 import MyProducts from '../components/MyProducts';
 
@@ -45,6 +50,23 @@ const List = () => {
           Esse  é o cardápio com os doces mais pedidos por aqui
         </Heading>
         <MyProducts />
+        <Link className="link" to="/">
+          <LinkContainer
+            top="1.5rem"
+            bottom="1.5rem"
+            left="2.5rem"
+            right="2.5rem"
+            radius=".5rem"
+            justify="center"
+            align="center"
+            gap=".5rem"
+            secondary
+            fixed
+          >
+            <BsArrowLeftCircle />
+            Voltar
+          </LinkContainer>
+        </Link>
       </FlexContainer>
     </PaddingContainer>
   )

@@ -11,6 +11,7 @@ import {
 } from '../styles/Global.styled'
 
 import RightImage from '../assets/about.png'
+import TopImage from '../assets/top.png';
 import BottomImage from '../assets/bottom.png'
 
 import { FaWhatsapp } from 'react-icons/fa6'
@@ -21,6 +22,7 @@ import { fadeInTopVariant } from '../utils/Variants'
 const About = () => {
   return (
     <FlexContainer direction="column" bgBlue>
+      <Image respBottom height="340px" src={TopImage} />
       <FlexContainer
         as={motion.div}
         variants={fadeInTopVariant}
@@ -46,6 +48,7 @@ const About = () => {
       >
         <FlexContainer
           align="center"
+          showImage
         >
           <FlexContainer
             as={motion.div}
@@ -182,9 +185,13 @@ const About = () => {
             whileInView="visible"
             justify="center"
             width="100%"
-            respImg
           >
-            <Image radius="1rem" src={RightImage} draggable="false" />
+            <Image
+              radius="1rem"
+              src={RightImage}
+              draggable="false"
+              responsive
+            />
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>

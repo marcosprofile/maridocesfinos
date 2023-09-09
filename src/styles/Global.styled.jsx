@@ -49,6 +49,8 @@ export const PaddingContainer = styled.div`
     padding-bottom: ${(props) => props.responsive ? '4rem' : ''};
     padding: ${(props) => props.responsivePadding ? '1rem' : '' };
     width: ${(props) => props.responsive ? '100%' : ''};
+    flex-direction: ${(props) => props.showImage ? 'column-reverse' : 'row'};
+    gap: ${(props) => props.showImage ? '4rem' : ''};
   };
 `;
 
@@ -158,6 +160,7 @@ export const Image = styled.img`
     height: ${(props) => props.respWidth ? '40px' : ''};
     height: ${(props) => props.respBottom ? '120px' : ''};
     height: ${(props) => props.respHeight ? '200px' : ''};
+    width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
 
@@ -277,6 +280,7 @@ export const Banner = styled(FlexContainer)`
   place-items: center;
   width: 100%;
   background: #00000030;
+  -webkit-backdrop-filter: blur(.75rem);
   backdrop-filter: blur(.75rem);
   color: #FFFFFF;
   font-size: 2.5rem;

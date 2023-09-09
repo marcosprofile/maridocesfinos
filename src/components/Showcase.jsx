@@ -31,6 +31,7 @@ const Showcase = () => {
         bgBlue
       >
         <FlexContainer
+          showImage
         >
           <FlexContainer
             as={motion.div}
@@ -98,9 +99,13 @@ const Showcase = () => {
             whileInView="visible"
             justify="center"
             width="100%"
-            respImg
           >
-            <Image radius="1rem" src={RightImage} draggable="false" />
+            <Image
+              radius="1rem"
+              src={RightImage}
+              draggable="false"
+              responsive
+            />
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>

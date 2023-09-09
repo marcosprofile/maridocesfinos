@@ -56,11 +56,6 @@ const Header = () => {
               Catálogo
             </LinkContainer>
           </Link>
-          <Link to="/sobre">
-            <LinkContainer>
-              Sobre
-            </LinkContainer>
-          </Link>
 
           <Button
             type="button"
@@ -108,16 +103,6 @@ const Header = () => {
                 grey
               >
                 Catálogo
-              </Heading>
-            </Link>
-            <PaddingContainer height="2rem"></PaddingContainer>
-            <Link to="/catalogo" onClick={() => { closeMenu(); window.location.href = '/sobre'; }}>
-              <Heading
-                as="h1"
-                size="h1"
-                grey
-              >
-                Sobre
               </Heading>
             </Link>
             <PaddingContainer height="2rem"></PaddingContainer>
