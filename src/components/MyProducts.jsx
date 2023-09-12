@@ -77,9 +77,6 @@ const MyProducts = () => {
             <Heading as="h3" size="h3" grey weight="600">
               Todos  os valores se referem a unidade no centro de doces
             </Heading>
-            <Heading as="p" size="p" grey>
-              (quantidade mínima de qualquer sabor do cardápio: 25 unidades)
-            </Heading>
           </FlexContainer>
 
           <GridContainer grid columns="1fr 1fr" gap=".75rem" responsiveGrid>
