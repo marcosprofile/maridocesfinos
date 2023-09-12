@@ -434,13 +434,13 @@ export const copinhosTrufados = [
     price: 'R$ 4,30'
   },
   {
-    id: 12,
+    id: 13,
     product_name: 'Tortinha de Amarula',
     product_desc: 'Ganache de licor de amarula.',
     price: 'R$ 3,80'
   },
   {
-    id: 13,
+    id: 14,
     product_name: 'Phisalis',
     product_desc: 'Trufa amarga com phisalis.',
     price: 'R$ 4,10'
