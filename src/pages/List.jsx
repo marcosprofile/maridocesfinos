@@ -24,7 +24,6 @@ const List = () => {
       left="1rem"
       right="1rem"
       responsive
-      bgWhite
     >
       <FlexContainer
         as={motion.div}

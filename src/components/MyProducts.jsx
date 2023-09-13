@@ -57,8 +57,6 @@ const MyProducts = () => {
           variants={fadeInLeftVariant}
           initial="hidden"
           whileInView="visible"
-          responsivePadding
-          border
           radius="1.5rem"
           width="100%"
           maxWidth="800px"
@@ -67,6 +65,8 @@ const MyProducts = () => {
           gap="1.5rem"
           top="5rem"
           bottom="5rem"
+          responsivePadding
+          border
         >
           <DivImage>
             <Image width="100%" src={Product_1} />

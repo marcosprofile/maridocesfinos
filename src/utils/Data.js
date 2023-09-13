@@ -209,7 +209,7 @@ export const bombons = [
     id: 2,
     product_name: 'Cookies and Cream',
     product_desc: 'Chocolate branco rechado com nutella e negresco',
-    price: 'R$ 2,50'
+    price: 'R$ 4,10'
   },
   {
     id: 3,
@@ -365,7 +365,7 @@ export const copinhosTrufados = [
     id: 1,
     product_name: 'Blueberry Cremoso',
     product_desc: 'Copinho chocolate branco com ganache de blueberry.',
-    price: 'R$3,50'
+    price: 'R$3,80'
   },
   {
     id: 2,
