@@ -496,15 +496,6 @@ const MyProducts = () => {
             <Banner>Caixa de degustação</Banner>
           </DivImage>
 
-          <FlexContainer direction="column">
-            <Heading as="h3" size="h3" grey weight="600">
-              Todos  os valores se referem a unidade no centro de doces
-            </Heading>
-            <Heading as="p" size="p" grey>
-              (quantidade mínima de qualquer sabor do cardápio: 25 unidades)
-            </Heading>
-          </FlexContainer>
-
           <FlexContainer
             direction="column"
             align="left"
