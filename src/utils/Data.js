@@ -267,13 +267,13 @@ export const pettyVerre = [
     id: 1,
     product_name: 'Banoffe',
     product_desc: 'Doce de leite, creme de banana e merengue.',
-    price: 'R$3,10'
+    price: 'R$5,50'
   },
   {
     id: 2,
     product_name: 'Limão',
     product_desc: 'Base de cookies cremoso de limão e chantily',
-    price: 'R$ 3,90'
+    price: 'R$ 5,50'
   },
   {
     id: 3,
@@ -285,7 +285,7 @@ export const pettyVerre = [
     id: 4,
     product_name: 'Maracujá',
     product_desc: 'Creme de maracujá com coulis de maracujá.',
-    price: 'R$ 3,90'
+    price: 'R$ 5,50'
   },
   {
     id: 5,
@@ -329,27 +329,15 @@ export const pettyTarte = [
   },
   {
     id: 4,
-    product_name: 'Banoffe',
-    product_desc: 'Doce de leite, banana e merenge suiço.',
-    price: 'R$ 3,80'
-  },
-  {
-    id: 5,
     product_name: 'Floresta Negra',
     product_desc: 'Creme de cereja.',
     price: 'R$ 3,80'
   },
   {
-    id: 6,
+    id: 5,
     product_name: 'Tortinha de Amarula',
     product_desc: 'Ganache de licor de amarula.',
     price: 'R$ 3,80'
-  },
-  {
-    id: 7,
-    product_name: 'Phisalis',
-    product_desc: 'Trufa amarga com phisalis.',
-    price: 'R$ 4,10'
   },
 ]
 
