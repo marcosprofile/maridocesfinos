@@ -81,7 +81,7 @@ const Contact = () => {
                   gap=".75rem"
                   href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20pedido"
                   target="_blank"
-                  secondary
+                  color="Secondary"
                   respLink
                 >
                   <Icon>
@@ -101,7 +101,7 @@ const Contact = () => {
                   gap=".75rem"
                   href="mailto:marinezperreira@outlook.com"
                   target="_blank"
-                  secondary
+                  color="Secondary"
                   respLink
                 >
                   <Icon>

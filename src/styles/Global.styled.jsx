@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import {
-  Primary,
   Secondary,
   StrokeBorder,
   ColorGrey,
@@ -30,6 +29,7 @@ export const PaddingContainer = styled.div`
   padding-left: ${({ left }) => left};
   padding-right: ${({ right }) => right};
   padding: ${({ padding }) => padding};
+  margin: ${({ margin }) => margin};
   margin-top: ${({ marginTop }) => marginTop};
   margin-bottom: ${({ marginBottom }) => marginBottom};
 
@@ -47,10 +47,10 @@ export const PaddingContainer = styled.div`
   @media (max-width: 768px) {
     padding-top: ${(props) => props.responsive ? '4rem' : ''};
     padding-bottom: ${(props) => props.responsive ? '4rem' : ''};
-    padding: ${(props) => props.responsivePadding ? '1rem' : '' };
     width: ${(props) => props.responsive ? '100%' : ''};
     flex-direction: ${(props) => props.showImage ? 'column-reverse' : 'row'};
     gap: ${(props) => props.showImage ? '4rem' : ''};
+    margin: ${(props) => props.responsive ? '2.5rem 0' : ''};
   };
 `;
 
@@ -60,10 +60,12 @@ export const FlexContainer = styled(PaddingContainer)`
   justify-content: ${({ justify }) => justify};
   width: ${({ width }) => width};
   max-width: ${({ maxWidth }) => maxWidth};
+  min-width: ${({ minWidth }) => minWidth};
   align-items: ${({ align }) => align};
   border-radius: ${({ radius }) => radius};
   border: ${(props) => props.border ? `1px solid ${StrokeBorder}` : ''};
   gap: ${({ gap }) => gap};
+  overflow: ${({ overflow }) => overflow};
 
   @media (max-width: 1175px) {
     display: ${(props) => props.respImg ? 'none' : ''};
@@ -71,6 +73,9 @@ export const FlexContainer = styled(PaddingContainer)`
   
   @media (max-width: 600px) {
     width: ${(props) => props.respAction ? '100%' : ''};
+    width: ${(props) => props.responsiveCard ? '190px' : ''};
+    flex-grow: ${(props) => props.responsiveCard ? '1' : ''};
+    margin: ${(props) => props.responsivePadding ? '0' : ''};
     flex-direction: ${(props) => props.respAction ? 'column' : ''};
   }
 `;
@@ -98,7 +103,8 @@ export const Heading = styled(PaddingContainer)`
   font-weight: ${({ weight }) => weight};
   text-align: ${({ align }) => align};
   line-height: 156%;
-  margin-bottom: ${({ bottom }) => bottom};
+  margin: 0;
+  margin-bottom: ${({ bottom }) => bottom} !important;
   font-size: ${({ size }) => {
     switch(size) {
       case 'h1':
@@ -114,7 +120,7 @@ export const Heading = styled(PaddingContainer)`
         return '1.5rem';
       
       case 'p':
-        return '1rem';
+        return '.875rem';
 
       default:
         return;
@@ -137,7 +143,7 @@ export const Heading = styled(PaddingContainer)`
           return '1.25rem';
 
         case 'p':
-          return '1rem';
+          return '.875rem';
 
         default:
           return;
@@ -167,8 +173,30 @@ export const Image = styled.img`
 export const LinkContainer = styled(FlexContainer)`
   font-size: 18px;
   font-weight: 500;
-  background-color: ${props => props.primary ? Primary : props.secondary ? Secondary : 'transparent'} !important;
-  color: ${props => (props.primary || props.secondary) ? ColorGrey : 'white'} !important;
+  background-color: ${({ color }) => {
+      switch(color) {
+        case 'Primary':
+          return '#FED84C';
+        
+        case 'Secondary':
+          return '#F2F6FA';
+
+        default:
+          return 'transparent';
+      };
+  }} !important;
+  color: ${({ color }) => {
+      switch(color) {
+        case 'Primary':
+          return '#2E363E';
+        
+        case 'Secondary':
+          return '#2E363E';
+
+        default:
+          return '#FFFFFF';
+      };
+  }} !important;
   transition: all .2s linear;
 
   &:hover {
@@ -179,6 +207,35 @@ export const LinkContainer = styled(FlexContainer)`
     width: ${(props) => props.respLink ? '100%' : ''};
   };
 `;
+
+export const BgColor = styled(FlexContainer)`
+  border-radius: .5rem;
+  background-color: ${({ color }) => {
+      switch(color) {
+        case 'Primary':
+          return '#FED84C';
+        
+        case 'Secondary':
+          return '#F2F6FA';
+
+        default:
+          return 'transparent';
+      };
+  }} !important;
+  color: ${({ color }) => {
+      switch(color) {
+        case 'Primary':
+          return '#2E363E';
+        
+        case 'Secondary':
+          return '#2E363E';
+
+        default:
+          return '#FFFFFF';
+      };
+  }} !important;
+  transition: all .2s linear;
+`
 
 export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
   @media (max-width: 600px) {

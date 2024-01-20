@@ -226,8 +226,8 @@ const Information = () => {
             justify="center"
             href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento"
             target="_blank"
+            color="Primary"
             respLink
-            primary
           >
             Realizar orçamento
           </RouterLink>

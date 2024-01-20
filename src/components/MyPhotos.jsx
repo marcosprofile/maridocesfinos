@@ -88,8 +88,8 @@ const MyPhotos = () => {
             justify="center"
             href="https://instagram.com/maridocessfinos?igshid=MzRlODBiNWFlZA=="
             target="_blank"
+            color="Primary"
             respLink
-            primary
           >
             <BsInstagram />
             Instagram

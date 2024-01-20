@@ -59,7 +59,7 @@ const List = () => {
             justify="center"
             align="center"
             gap=".5rem"
-            secondary
+            color="Secondary"
             fixed
           >
             <BsArrowLeftCircle />

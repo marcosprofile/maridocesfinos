@@ -28,6 +28,13 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <>
       <StyledHeader
@@ -39,19 +46,19 @@ const Header = () => {
         gap="4rem"
         bgBlue
       >
-        <Link to="/">
+        <Link to="/" onClick={scrollToTop}>
           <Image respWidth src={Logo} />
         </Link>
         <NavBar
           gap="2.5rem"
           align="center"
         >
-          <Link to="/">
+          <Link to="/" onClick={scrollToTop}>
             <LinkContainer>
               Início
             </LinkContainer>
           </Link>
-          <Link to="/catalogo">
+          <Link to="/catalogo" onClick={scrollToTop}>
             <LinkContainer>
               Catálogo
             </LinkContainer>

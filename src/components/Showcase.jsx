@@ -23,6 +23,7 @@ const Showcase = () => {
   return (
     <FlexContainer direction="column" bgBlue>
       <PaddingContainer
+        id="showcase"
         top="8rem"
         bottom="6rem"
         left="240px"
@@ -77,8 +78,8 @@ const Showcase = () => {
                   right="2.5rem"
                   radius=".5rem"
                   justify="center"
+                  color="Primary"
                   respLink
-                  primary
                 >
                   Ir para o catálogo
                 </LinkContainer>

@@ -70,7 +70,7 @@ const About = () => {
                 marginBottom="1rem"
               >
                 <Icon
-                  top=".25rem"
+                  top=".05rem"
                   point
                 >
                   <BsFillRecordFill />
@@ -90,7 +90,7 @@ const About = () => {
                 marginBottom="1rem"
               >
                 <Icon
-                  top=".25rem"
+                  top=".05rem"
                   point
                 >
                   <BsFillRecordFill />
@@ -110,7 +110,7 @@ const About = () => {
                 marginBottom="1rem"
               >
                 <Icon
-                  top=".25rem"
+                  top=".05rem"
                   point
                 >
                   <BsFillRecordFill />
@@ -127,7 +127,7 @@ const About = () => {
               </FlexContainer>
               <FlexContainer gap=".5rem" >
                 <Icon
-                  top=".25rem"
+                  top=".05rem"
                   point
                 >
                   <BsFillRecordFill />
@@ -168,8 +168,8 @@ const About = () => {
                 gap=".75rem"
                 href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento"
                 target="_blank"
+                color="Primary"
                 respLink
-                primary
               >
                 <Icon>
                   <FaWhatsapp />

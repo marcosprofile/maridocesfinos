@@ -145,8 +145,8 @@ const Tasting = () => {
                 gap=".75rem"
                 href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20solicitar%20a%20degustação"
                 target="_blank"
+                color="Primary"
                 respLink
-                primary
               >
                 Solicitar degustação
               </RouterLink>
