@@ -299,14 +299,14 @@ export const pettyVerre = [
     product_img: Insta6,
     product_name: 'Banoffe',
     product_desc: 'Doce de leite, creme de banana e merengue.',
-    price: 'R$3,10'
+    price: 'R$5,50'
   },
   {
     id: 2,
     product_img: Insta6,
     product_name: 'Limão',
     product_desc: 'Base de cookies cremoso de limão e chantily',
-    price: 'R$ 3,90'
+    price: 'R$ 5,50'
   },
   {
     id: 3,
@@ -320,7 +320,7 @@ export const pettyVerre = [
     product_img: Insta6,
     product_name: 'Maracujá',
     product_desc: 'Creme de maracujá com coulis de maracujá.',
-    price: 'R$ 3,90'
+    price: 'R$ 5,50'
   },
   {
     id: 5,
