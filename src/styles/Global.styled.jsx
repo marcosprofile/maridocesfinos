@@ -73,7 +73,8 @@ export const FlexContainer = styled(PaddingContainer)`
   
   @media (max-width: 600px) {
     width: ${(props) => props.respAction ? '100%' : ''};
-    width: ${(props) => props.responsiveCard ? '190px' : ''};
+    width: ${(props) => props.responsiveCard ? '162px' : ''};
+    min-width: ${(props) => props.responsiveCard ? '162px' : ''};
     flex-grow: ${(props) => props.responsiveCard ? '1' : ''};
     margin: ${(props) => props.responsivePadding ? '0' : ''};
     flex-direction: ${(props) => props.respAction ? 'column' : ''};
@@ -118,6 +119,9 @@ export const Heading = styled(PaddingContainer)`
 
       case 'h4':
         return '1.5rem';
+
+      case 'h5':
+        return '1.25rem';
       
       case 'p':
         return '.875rem';
@@ -141,6 +145,9 @@ export const Heading = styled(PaddingContainer)`
 
         case 'h4':
           return '1.25rem';
+
+        case 'h5':
+          return '1rem';
 
         case 'p':
           return '.875rem';
