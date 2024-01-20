@@ -166,6 +166,7 @@ export const Image = styled.img`
     height: ${(props) => props.respWidth ? '40px' : ''};
     height: ${(props) => props.respBottom ? '120px' : ''};
     height: ${(props) => props.respHeight ? '200px' : ''};
+    height: ${(props) => props.respImgCard ? '128px' : ''};
     width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
