@@ -10,7 +10,7 @@ import {
 const List = ({ data }) => {
   return (
     <>
-      <Image width="100%" height="164px" src={data.product_img} respImgCard />
+      <Image width="100%" height="164px" src={data.product_img} respImgCard draggable="false" />
       <FlexContainer
         direction="column"
         padding=".75rem"
