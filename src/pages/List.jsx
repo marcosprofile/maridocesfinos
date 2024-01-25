@@ -18,13 +18,7 @@ import { fadeInTopVariant } from '../utils/Variants';
 
 const List = () => {
   return (
-    <PaddingContainer
-      top="3rem"
-      bottom="2rem"
-      left="1rem"
-      right="1rem"
-      responsive
-    >
+    <PaddingContainer bottom="2rem" left="1rem" right="1rem" responsive>
       <FlexContainer
         as={motion.div}
         variants={fadeInTopVariant}

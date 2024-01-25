@@ -77,7 +77,7 @@ export const slideInLeft = {
     }
   },
   exit: {
-    x: '-100vh',
+    x: '100vh', // ou x: 0
     opacity: 0,
 
     transition: {
@@ -102,7 +102,7 @@ export const slideInRight = {
     }
   },
   exit: {
-    x: '-100vh',
+    x: '100vh', // ou x: 0
     opacity: 0,
 
     transition: {

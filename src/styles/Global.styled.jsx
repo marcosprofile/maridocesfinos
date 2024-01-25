@@ -4,20 +4,14 @@ import {
   Secondary,
   StrokeBorder,
   ColorGrey,
-  BlueColor,
-  LightGrey,
+  BlueColor
 } from '../utils/Theme';
 
 export const MainBody = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
   background-color: ${({ theme }) => theme.colors.bgColor};
   color: ${ColorGrey};
-
-  @media (max-width: 1024px) {
-    margin-top: 48px;
-  };
 `;
 
 export const PaddingContainer = styled.div`
@@ -45,12 +39,11 @@ export const PaddingContainer = styled.div`
   };
   
   @media (max-width: 768px) {
-    padding-top: ${(props) => props.responsive ? '4rem' : ''};
-    padding-bottom: ${(props) => props.responsive ? '4rem' : ''};
+    padding-top: ${(props) => props.responsive ? '2.5rem' : ''};
+    padding-bottom: ${(props) => props.responsive ? '2.5rem' : ''};
     width: ${(props) => props.responsive ? '100%' : ''};
     flex-direction: ${(props) => props.showImage ? 'column-reverse' : 'row'};
     gap: ${(props) => props.showImage ? '4rem' : ''};
-    margin: ${(props) => props.responsive ? '2.5rem 0' : ''};
   };
 `;
 
@@ -82,9 +75,15 @@ export const FlexContainer = styled(PaddingContainer)`
 `;
 
 export const StyledHeader = styled(FlexContainer).attrs({ as: 'header' })`
-  position: fixed;
+  background: #081130;
+  padding: 0 80px;
+  position: sticky;
   top: 0;
-  border-bottom: 1px solid ${LightGrey};
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  gap: 4rem;
+  border-bottom: 1px solid #7E868E10;
   z-index: 2;
 
   @media(max-width: 1024px) {
