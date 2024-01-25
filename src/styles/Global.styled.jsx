@@ -256,6 +256,10 @@ export const BgColor = styled(FlexContainer)`
 
 export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
   min-width: 200px;
+
+  @media (max-width: 768px) {
+    min-width: unset;
+  }
 `;
 
 export const Badge = styled(FlexContainer)`
