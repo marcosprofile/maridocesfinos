@@ -257,7 +257,7 @@ export const BgColor = styled(FlexContainer)`
 export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
   min-width: 200px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     min-width: unset;
   }
 `;
