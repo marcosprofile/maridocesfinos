@@ -8,6 +8,7 @@ import {
   MenuButton,
   NavBar,
   StyledHeader,
+  StyledButton,
   PaddingContainer,
   Heading
 } from '../styles/Global.styled';
@@ -66,7 +67,7 @@ const Header = () => {
       >
         <div className="offcanvas-header">
           <PaddingContainer width="100%" right="4rem" bottom="2rem"></PaddingContainer>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <StyledButton className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></StyledButton>
           <PaddingContainer right="1rem" bottom="2rem"></PaddingContainer>
         </div>
         <div className="offcanvas-body">

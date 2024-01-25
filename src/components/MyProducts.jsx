@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion'
 
 /* Components */
-import ConsultButton from './Product/ConsultButton'
+import Button from './Button/Button'
 import Title from './Product/Title'
 import HeaderProducts from './Product/HeaderProducts'
 import { PaddingContainer, FlexContainer } from '../styles/Global.styled';
@@ -40,7 +40,9 @@ const MyProducts = () => {
           <Title titulo="Brigadeiros" />
           <HeaderProducts />
           <Brigadeiros />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
         
         {/* Product 2 */}
@@ -59,7 +61,9 @@ const MyProducts = () => {
           <Title titulo="Bombons" />
           <HeaderProducts />
           <Bombons />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
 
         {/* Product 3 */}
@@ -78,7 +82,9 @@ const MyProducts = () => {
           <Title titulo="Petty Verre" />
           <HeaderProducts />
           <PettyVerre />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
 
         {/* Product 4 */}
@@ -97,7 +103,9 @@ const MyProducts = () => {
           <Title titulo="Petty Tarte" />
           <HeaderProducts />
           <PettyTarte />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
 
         {/* Product 5 */}
@@ -116,7 +124,9 @@ const MyProducts = () => {
           <Title titulo="Copinhos trufados" />
           <HeaderProducts />
           <CopinhosTrufados />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
 
         {/* Product 6 */}
@@ -135,7 +145,9 @@ const MyProducts = () => {
           <Title titulo="Copinhos fondados" />
           <HeaderProducts />
           <CopinhosFondados />
-          <ConsultButton value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          <FlexContainer justify="center" top="2rem">
+            <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+          </FlexContainer>
         </FlexContainer>
 
         {/* Product 7 */}

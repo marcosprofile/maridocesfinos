@@ -1,23 +1,22 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import InfoList from './InfoList/InfoList'
 
 import {
   FlexContainer,
   Heading,
   Image,
-  Icon,
-  PaddingContainer,
-  RouterLink,
+  PaddingContainer
 } from '../styles/Global.styled'
 
+/* Images */
 import RightImage from '../assets/about.png'
 import TopImage from '../assets/top.png';
 import BottomImage from '../assets/bottom.png'
 
-import { FaWhatsapp } from 'react-icons/fa6'
-import { BsFillRecordFill } from 'react-icons/bs'
-
+/* Animations */
 import { fadeInTopVariant } from '../utils/Variants'
+import Button from './Button/Button';
 
 const About = () => {
   return (
@@ -31,12 +30,7 @@ const About = () => {
         justify="center"
         top="3rem"
       >
-        <Heading
-          as="h2"
-          size="h2"
-        >
-          Sobre
-        </Heading>
+        <Heading as="h2" size="h2">Sobre</Heading>
       </FlexContainer>
       <PaddingContainer
         top="5rem"
@@ -46,10 +40,7 @@ const About = () => {
         responsive
         bgBlue
       >
-        <FlexContainer
-          align="center"
-          showImage
-        >
+        <FlexContainer align="center" showImage>
           <FlexContainer
             as={motion.div}
             variants={fadeInTopVariant}
@@ -60,122 +51,15 @@ const About = () => {
             width="100%"
             gap="1.5rem"
           >
-            <Heading
-              as="p"
-              size="p"
-              bottom="0"
-            >
-              <FlexContainer
-                gap=".5rem"
-                marginBottom="1rem"
-              >
-                <Icon
-                  top=".05rem"
-                  point
-                >
-                  <BsFillRecordFill />
-                </Icon>
-                <Heading
-                  as="p"
-                  size="p"
-                  weight="400"
-                  bottom="0"
-                  align="left"
-                >
-                  A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa.
-                </Heading>
-              </FlexContainer>
-              <FlexContainer
-                gap=".5rem"
-                marginBottom="1rem"
-              >
-                <Icon
-                  top=".05rem"
-                  point
-                >
-                  <BsFillRecordFill />
-                </Icon>
-                <Heading
-                  as="p"
-                  size="p"
-                  weight="400"
-                  bottom="0"
-                  align="left"
-                >
-                  Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial.
-                </Heading>
-              </FlexContainer>
-              <FlexContainer
-                gap=".5rem"
-                marginBottom="1rem"
-              >
-                <Icon
-                  top=".05rem"
-                  point
-                >
-                  <BsFillRecordFill />
-                </Icon>
-                <Heading
-                  as="p"
-                  size="p"
-                  weight="400"
-                  bottom="0"
-                  align="left"
-                >
-                  Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!
-                </Heading>
-              </FlexContainer>
-              <FlexContainer gap=".5rem" >
-                <Icon
-                  top=".05rem"
-                  point
-                >
-                  <BsFillRecordFill />
-                </Icon>
-                <Heading
-                  as="p"
-                  size="p"
-                  weight="400"
-                  bottom="0"
-                  align="left"
-                >
-                  Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa.
-                </Heading>
-              </FlexContainer>
-            </Heading>
-            <FlexContainer
-              top="2.5rem"
-              align="center" 
-              gap="1rem"
-              direction="column"
-              respAction
-            >
-              <Heading
-                as="p"
-                size="p"
-              >
+            <InfoList info="A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa." grey={false} />
+            <InfoList info="Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial." grey={false} />
+            <InfoList info="Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!" grey={false} />
+            <InfoList info="Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa." grey={false} />
+            <FlexContainer top="2.5rem" align="center" gap="2.5rem" direction="column" respAction>
+              <Heading as="p" size="p">
                 Ficou interessada(o)? Entre em contato comigo.
               </Heading>
-              <RouterLink
-                width="100%"
-                top="1.5rem"
-                bottom="1.5rem"
-                left="3rem"
-                right="3rem"
-                radius=".5rem"
-                justify="center"
-                align="center"
-                gap=".75rem"
-                href="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento"
-                target="_blank"
-                color="Primary"
-                respLink
-              >
-                <Icon>
-                  <FaWhatsapp />
-                </Icon>
-                WhatsApp
-              </RouterLink>
+              <Button color="Primary" value="WhatsApp" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
             </FlexContainer>
           </FlexContainer>
           <FlexContainer
@@ -186,12 +70,7 @@ const About = () => {
             justify="center"
             width="100%"
           >
-            <Image
-              radius="1rem"
-              src={RightImage}
-              draggable="false"
-              responsive
-            />
+            <Image radius="1rem" src={RightImage} draggable="false" responsive />
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>

@@ -16,7 +16,7 @@ import Empty from '../assets/catalogo/empty.png';
 import BlueBerry from '../assets/catalogo/blueberry.png';
 
 
-export const Gallery = [
+export const gallery = [
   {
     id: 0,
     image: Insta1

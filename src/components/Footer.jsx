@@ -5,24 +5,12 @@ import {
   StyledFooter,
 } from '../styles/Global.styled';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <StyledFooter
-      width="100%"
-      direction="column"
-      align="center"
-      gap="2rem"
-      top="2rem"
-    >
-      <Heading
-        as="p"
-        size="p"
-        grey
-      >
+    <StyledFooter>
+      <Heading as="h5" size="h5" grey>
         &copy; Mary Doces Finos
       </Heading>
     </StyledFooter>
   )
 }
-
-export default Footer;

@@ -1,23 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 import {
   FlexContainer,
   Heading,
   PaddingContainer,
   Image,
-  Button,
-  LinkContainer,
-} from '../styles/Global.styled';
+  Badge
+} from '../styles/Global.styled'
 
-import {
-  fadeInLeftVariant,
-  fadeInRightVariant,
-} from '../utils/Variants';
+import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 
-import RightImage from '../assets/img_1.png';
-import BottomImage from '../assets/bottom.png';
+import RightImage from '../assets/img_1.png'
+import BottomImage from '../assets/bottom.png'
+import Button from './Button/Button'
 
 const Showcase = () => {
   return (
@@ -31,9 +28,7 @@ const Showcase = () => {
         responsive
         bgBlue
       >
-        <FlexContainer
-          showImage
-        >
+        <FlexContainer showImage>
           <FlexContainer
             as={motion.div}
             variants={fadeInLeftVariant}
@@ -44,51 +39,19 @@ const Showcase = () => {
             width="100%"
             gap="1.5rem"
           >
-            <Button
-              size="14px"
-              top=".5rem"
-              right="1rem"
-              bottom=".5rem"
-              left="1rem"
-              radius=".5rem"
-              default
-              secondary
-            >
+            <Badge padding=".5rem .75rem" radius=".5rem" fontWeight="600">
               DELICIOSO
-            </Button>
-            <Heading
-              as="h2"
-              size="h2"
-              weight="bold"
-              bottom="0"
-            >
+            </Badge>
+            <Heading  as="h2" size="h2" weight="bold" bottom="0">
               Doces finos para casamentos e festas em geral. Com entrega em São Paulo e Região
             </Heading>
-            <FlexContainer
-              top="2.5rem"
-              align="center" 
-              gap="1rem"
-              respAction
-            >
+            <FlexContainer top="2.5rem" align="center" gap="1rem" respAction>
               <Link className="link" to="/catalogo">
-                <LinkContainer
-                  top="1.5rem"
-                  bottom="1.5rem"
-                  left="2.5rem"
-                  right="2.5rem"
-                  radius=".5rem"
-                  justify="center"
-                  color="Primary"
-                  respLink
-                >
-                  Ir para o catálogo
-                </LinkContainer>
+              <FlexContainer justify="center">
+                <Button color="Primary" value="Ir para o catálogo" />
+              </FlexContainer>
               </Link>
-              <Heading
-                as="p"
-                size="p"
-                bottom="0"
-              >
+              <Heading as="p" size="p" bottom="0">
                 +10 tipos diferentes para escolher
               </Heading>
             </FlexContainer>
@@ -101,12 +64,7 @@ const Showcase = () => {
             justify="center"
             width="100%"
           >
-            <Image
-              radius="1rem"
-              src={RightImage}
-              draggable="false"
-              responsive
-            />
+            <Image radius="1rem" src={RightImage} draggable="false" responsive />
           </FlexContainer>
         </FlexContainer>
       </PaddingContainer>

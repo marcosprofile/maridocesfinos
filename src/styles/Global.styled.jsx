@@ -12,6 +12,11 @@ export const MainBody = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.bgColor};
   color: ${ColorGrey};
+  margin-top: 80px;
+
+  @media (max-width: 768px) {
+    margin-top: 4rem;
+  };
 `;
 
 export const PaddingContainer = styled.div`
@@ -59,6 +64,7 @@ export const FlexContainer = styled(PaddingContainer)`
   border: ${(props) => props.border ? `1px solid ${StrokeBorder}` : ''};
   gap: ${({ gap }) => gap};
   overflow: ${({ overflow }) => overflow};
+  font-weight: ${({ fontWeight }) => fontWeight};
 
   @media (max-width: 1175px) {
     display: ${(props) => props.respImg ? 'none' : ''};
@@ -75,16 +81,16 @@ export const FlexContainer = styled(PaddingContainer)`
 `;
 
 export const StyledHeader = styled(FlexContainer).attrs({ as: 'header' })`
+  position: fixed;
+  top: 0;
   background: #081130;
   padding: 0 80px;
-  position: sticky;
-  top: 0;
   width: 100%;
   height: 80px;
   align-items: center;
   gap: 4rem;
   border-bottom: 1px solid #7E868E10;
-  z-index: 2;
+  z-index: 20;
 
   @media(max-width: 1024px) {
     padding: 0 2rem;
@@ -210,6 +216,10 @@ export const LinkContainer = styled(FlexContainer)`
     transform: scale(.95);
   }
 
+  @media (min-width: 600px) {
+    width: ${(props) => props.respLink ? 'max-content' : ''};
+  }
+
   @media (max-width: 600px) {
     width: ${(props) => props.respLink ? '100%' : ''};
   };
@@ -245,12 +255,14 @@ export const BgColor = styled(FlexContainer)`
 `
 
 export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
-  @media (max-width: 600px) {
-    width: ${(props) => props.respLink ? '100%' : ''};
-  };
+  min-width: 200px;
 `;
 
-export const Button = styled(RouterLink).attrs({ as: 'button'})`
+export const Badge = styled(FlexContainer)`
+  background: ${Secondary};
+`
+
+export const StyledButton = styled(RouterLink).attrs({ as: 'button'})`
   font-size: ${({ size }) => size};
   height: ${({ height }) => height};
   border: none;
@@ -261,7 +273,7 @@ export const Button = styled(RouterLink).attrs({ as: 'button'})`
   }
 `;
 
-export const MenuButton = styled(Button)`
+export const MenuButton = styled(StyledButton)`
   display: none;
 
   @media (max-width: 1024px) {
@@ -367,4 +379,13 @@ export const Price = styled.div`
   border-radius: 8rem;
 `;
 
-export const StyledFooter = styled(FlexContainer).attrs({ as: 'footer'})``;
+export const StyledFooter = styled.footer`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  direction: column;
+  padding: 1rem;
+  align: center;
+  gap: 2rem;
+  top: 2rem;
+`;
