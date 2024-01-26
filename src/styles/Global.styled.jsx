@@ -81,7 +81,9 @@ export const FlexContainer = styled(PaddingContainer)`
   }
 `;
 
-export const StyledHeader = styled(FlexContainer).attrs({ as: 'header' })`
+export const StyledHeader = styled.header`
+  display: flex;
+  align-items: center;
   position: fixed;
   top: 0;
   background: #081130;
