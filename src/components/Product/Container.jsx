@@ -1,7 +1,7 @@
 import React from 'react'
 import { FlexContainer } from '../../styles/Global.styled'
 
-export default function Container() {
+export default function Container({ children }) {
   return (
     <FlexContainer
       direction="column"
@@ -14,6 +14,7 @@ export default function Container() {
       border
       responsiveCard
     >
+      {children}
     </FlexContainer>
   )
 }
