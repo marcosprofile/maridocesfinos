@@ -57,6 +57,7 @@ export const FlexContainer = styled(PaddingContainer)`
   flex-direction: ${({ direction }) => direction};
   justify-content: ${({ justify }) => justify};
   width: ${({ width }) => width};
+  height: auto !important;
   max-width: ${({ maxWidth }) => maxWidth};
   min-width: ${({ minWidth }) => minWidth};
   align-items: ${({ align }) => align};
@@ -387,9 +388,6 @@ export const StyledFooter = styled.footer`
   display: flex;
   justify-content: center;
   width: 100%;
-  direction: column;
   padding: 1rem;
-  align: center;
   gap: 2rem;
-  top: 2rem;
 `;
