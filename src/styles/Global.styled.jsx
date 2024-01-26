@@ -76,7 +76,7 @@ export const FlexContainer = styled(PaddingContainer)`
     width: ${(props) => props.responsiveCard ? '162px' : ''};
     min-width: ${(props) => props.responsiveCard ? '162px' : ''};
     flex-grow: ${(props) => props.responsiveCard ? '1' : ''};
-    margin: ${(props) => props.responsivePadding ? '0' : ''};
+    margin: ${(props) => props.responsivePadding ? '0 0 4rem 0' : ''};
     flex-direction: ${(props) => props.respAction ? 'column' : ''};
   }
 `;
