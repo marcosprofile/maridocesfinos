@@ -28,7 +28,7 @@ export default function Information() {
           <InfoList info="Todos os doces são feitos de forma artesanal, com insumos de primeira qualidade. Não usamos conservantes." grey={true} />
           <InfoList info="Quantidade mínima de cada sabor - 25 unidades" grey={true} />
         </FlexContainer>
-        <FlexContainer justify="center" top="2rem">
+        <FlexContainer justify="center" top="2rem" respAction>
           <Button color="Primary" value="Realizar orçamento" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
         </FlexContainer>
       </FlexContainer>

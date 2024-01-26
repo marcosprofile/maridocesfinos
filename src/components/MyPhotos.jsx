@@ -24,7 +24,7 @@ const MyPhotos = () => {
           Veja fotos de pedidos reais do nosso instagram
         </Heading>
         <Gallery />
-        <FlexContainer top="2rem">
+        <FlexContainer top="2rem" respAction>
           <Button color="Primary" value="Instagram" link="https://instagram.com/maridocessfinos?igshid=MzRlODBiNWFlZA==" />
         </FlexContainer>
       </FlexContainer>
