@@ -1,8 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import InfoList from './InfoList/InfoList'
+import Title from './Product/Title'
 import Button from './Button/Button'
-import { FlexContainer, Heading, PaddingContainer } from '../styles/Global.styled'
+import { FlexContainer, PaddingContainer } from '../styles/Global.styled'
 import { fadeInLeftVariant } from '../utils/Variants'
 
 export default function Information() {
@@ -17,7 +18,7 @@ export default function Information() {
         direction="column"
         gap="1.5rem"
       >
-        <Heading as="h2" size="h2" grey>Informações</Heading> 
+        <Title titulo="Informações" /> 
         <FlexContainer direction="column" gap=".75rem">
           <InfoList info="Trabalhamos com contrato." grey={true} />
           <InfoList info="Pedidos com antecedência (mediante disponibilidade de data)." grey={true} />

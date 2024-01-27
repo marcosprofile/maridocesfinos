@@ -1,11 +1,13 @@
 import React from 'react'
 import { FlexContainer } from '../../styles/Global.styled'
 import InfoList from '../InfoList/InfoList'
+import Title from '../Product/Title'
 import Button from '../Button/Button'
 
 export default function CaixaDeDegustacao() {
   return (
     <FlexContainer direction="column" gap="1.5rem">
+      <Title titulo="Caixa de degustação" />
       <InfoList info="Sabores dos doces sortidos de acordo com a produção da semana" grey={true} />
       <InfoList info="Não possuímos serviços de entrega da caixa (retirar pessoalmente ou solicitar uber flash)" grey={true} />
       <InfoList info="A caixa contém 15 sabores sortidos" grey={true} />

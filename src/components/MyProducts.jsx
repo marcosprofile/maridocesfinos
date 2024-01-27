@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { motion } from 'framer-motion'
 
 /* Components */
 import Button from './Button/Button'
-import Title from './Product/Title'
-import HeaderProducts from './Product/HeaderProducts'
-import { PaddingContainer, FlexContainer } from '../styles/Global.styled';
+import { PaddingContainer, FlexContainer } from '../styles/Global.styled'
 
 /* Products */
 import Brigadeiros from './Products/Brigadeiros'
@@ -18,6 +16,7 @@ import CaixaDeDegustacao from './Products/CaixaDeDegustacao'
 
 /* Animations */
 import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
+import ContainerItems from './Product/ContainerItems'
 
 
 const MyProducts = () => {
@@ -25,148 +24,57 @@ const MyProducts = () => {
     <PaddingContainer top="3rem" bottom="8rem" width="100%">
       <FlexContainer direction="column" align="center" gap="2rem">
         {/* Product 1 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Brigadeiros" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
           <Brigadeiros />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
         
         {/* Product 2 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Bombons" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInRightVariant}>
           <Bombons />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
 
         {/* Product 3 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Petty Verre" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
           <PettyVerre />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
 
         {/* Product 4 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Petty Tarte" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInRightVariant}>
           <PettyTarte />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
 
         {/* Product 5 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Copinhos trufados" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
           <CopinhosTrufados />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
 
         {/* Product 6 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInRightVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          responsivePadding
-        >
-          <Title titulo="Copinhos fondados" />
-          <HeaderProducts />
+        <ContainerItems motion={motion.div} slide={fadeInRightVariant}>
           <CopinhosFondados />
           <FlexContainer justify="center" top="2rem">
             <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
           </FlexContainer>
-        </FlexContainer>
+        </ContainerItems>
 
         {/* Product 7 */}
-        <FlexContainer
-          as={motion.div}
-          variants={fadeInLeftVariant}
-          initial="hidden"
-          whileInView="visible"
-          radius="1.5rem"
-          width="100%"
-          direction="column"
-          gap="1.5rem"
-          margin="5rem 0"
-          align="center"
-          responsivePadding
-        >
-          <Title titulo="Caixa de degustação" />
+        <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
           <CaixaDeDegustacao />
-        </FlexContainer>
+        </ContainerItems>
       </FlexContainer>
     </PaddingContainer>
   )
