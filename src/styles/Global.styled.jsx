@@ -12,7 +12,7 @@ export const MainBody = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.bgColor};
   color: ${ColorGrey};
-  margin-top: 80px;
+  margin-top: 112px;
 
   @media (max-width: 768px) {
     margin-top: 4rem;

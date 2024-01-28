@@ -7,8 +7,8 @@ import { FlexContainer } from '../../styles/Global.styled'
 // Components
 import InfoList from '../InfoList/InfoList'
 import Title from '../Product/Title'
-import Button from '../Button/Button'
 import ContainerItems from '../Product/ContainerItems'
+import BtnContact from '../Product/BtnContact'
 
 // Utils
 import { fadeInRightVariant } from '../../utils/Variants'
@@ -25,7 +25,7 @@ export default function CaixaDeDegustacao() {
         <InfoList info="Ofereçemos degustação presencial com agendamento" grey={true} />
         <InfoList info="Pagamento via pix no momento da reserva" grey={true} />
         <FlexContainer justify="center" top="2rem">
-          <Button color="Primary" value="Solicitar degustação" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20solicitar%20a%20degustação" grey={true} />
+          <BtnContact value="Solicitar degustação" color="Primary" />
         </FlexContainer>
       </FlexContainer>
     </ContainerItems>

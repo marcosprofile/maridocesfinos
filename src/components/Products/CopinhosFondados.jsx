@@ -9,7 +9,7 @@ import Container from './../Product/Container'
 import Title from './../Product/Title'
 import HeaderProducts from './../Product/HeaderProducts'
 import ContainerItems from './../Product/ContainerItems'
-import Button from '../Button/Button'
+import BtnContact from '../Product/BtnContact'
 import List from '../../layouts/List'
 
 // Utils
@@ -31,8 +31,8 @@ export default function CopinhosFondados() {
           ))}
         </GridContainer>
         <FlexContainer justify="center" top="2rem">
-          <Button color="Primary" value="Consultar mais sabores" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
-          </FlexContainer>
+          <BtnContact value="Consultar mais sabores" color="Primary" />
+        </FlexContainer>
       </FlexContainer>
     </ContainerItems>
   )
