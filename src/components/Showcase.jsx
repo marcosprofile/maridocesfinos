@@ -51,7 +51,7 @@ const Showcase = () => {
                 <Button color="Primary" value="Ir para o catálogo" />
               </FlexContainer>
               </Link>
-              <Heading as="p" size="p" bottom="0">
+              <Heading as="h6" size="h6" bottom="0">
                 +10 tipos diferentes para escolher
               </Heading>
             </FlexContainer>
