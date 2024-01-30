@@ -13,7 +13,7 @@ import BtnContact from '../Product/BtnContact'
 import List from '../../layouts/List'
 
 // Utils
-import { bombons } from '../../utils/Data'
+import { bombons } from '../../utils/Catalogo/BombonsData'
 import { fadeInRightVariant } from './../../utils/Variants'
 
 

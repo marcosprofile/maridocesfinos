@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { GridContainer, GridItem, PaddingContainer } from '../../styles/Global.styled'
 import { fadeInTopVariant } from '../../utils/Variants'
 import Photos from '../../layouts/Photos'
-import { gallery } from './../../utils/Data';
+import { gallery } from './../../utils/Gallery/Data';
 
 export default function Gallery() {
   return (

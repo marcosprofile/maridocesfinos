@@ -5,15 +5,15 @@ import { motion } from 'framer-motion'
 import { FlexContainer, GridContainer } from '../../styles/Global.styled'
 
 // Components
-import Container from './../Product/Container'
-import Title from './../Product/Title'
-import HeaderProducts from './../Product/HeaderProducts'
-import ContainerItems from './../Product/ContainerItems'
-import BtnContact from '../Product/BtnContact'
+import Container from '../Catalogo/Container'
+import Title from '../Catalogo/Title'
+import HeaderProducts from '../Catalogo/HeaderProducts'
+import ContainerItems from '../Catalogo/ContainerItems'
+import BtnContact from '../Catalogo/BtnContact'
 import List from '../../layouts/List'
 
 // Utils
-import { copinhosTrufados } from '../../utils/Data'
+import { copinhosTrufados } from '../../utils/Catalogo/CopinhosTrufadosData'
 import { fadeInRightVariant } from './../../utils/Variants'
 
 

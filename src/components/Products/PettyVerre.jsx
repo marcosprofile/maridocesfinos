@@ -13,7 +13,7 @@ import BtnContact from '../Product/BtnContact'
 import List from '../../layouts/List'
 
 // Utils
-import { pettyVerre } from '../../utils/Data'
+import { pettyVerre } from '../../utils/Catalogo/PettyVerreData'
 import { fadeInRightVariant } from './../../utils/Variants'
 
 

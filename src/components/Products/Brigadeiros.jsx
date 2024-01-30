@@ -13,7 +13,7 @@ import BtnContact from '../Product/BtnContact'
 import List from '../../layouts/List'
 
 // Utils
-import { brigadeirosGourmetDetails } from '../../utils/Data'
+import { brigadeiros } from '../../utils/Catalogo/BrigadeirosData'
 import { fadeInLeftVariant } from './../../utils/Variants'
 
 
@@ -24,7 +24,7 @@ export default function Brigadeiros() {
         <Title titulo="Brigadeiros" />
         <HeaderProducts />
         <GridContainer gap="1rem" responsiveGrid>
-          {brigadeirosGourmetDetails.map((product) => (
+          {brigadeiros.map((product) => (
             <Container key={product.id}>
               <List data={product} />
             </Container>
