@@ -179,7 +179,7 @@ export const Image = styled.img`
   }
 
   @media (max-width: 768px) {
-    height: ${(props) => props.respWidth ? '40px' : ''};
+    height: ${(props) => props.respWidth ? '32px' : ''};
     height: ${(props) => props.respBottom ? '120px' : ''};
     height: ${(props) => props.respHeight ? '200px' : ''};
     height: ${(props) => props.respImgCard ? '240px' : ''};

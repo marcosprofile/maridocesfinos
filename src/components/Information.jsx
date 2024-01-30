@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import InfoList from './InfoList/InfoList'
-import Title from './Product/Title'
+import Title from './Catalogo/Title'
 import Button from './Button/Button'
 import { FlexContainer, PaddingContainer } from '../styles/Global.styled'
 import { fadeInLeftVariant } from '../utils/Variants'

@@ -6,9 +6,9 @@ import { FlexContainer } from '../../styles/Global.styled'
 
 // Components
 import InfoList from '../InfoList/InfoList'
-import Title from '../Product/Title'
-import ContainerItems from '../Product/ContainerItems'
-import BtnContact from '../Product/BtnContact'
+import Title from '../Catalogo/Title'
+import ContainerItems from '../Catalogo/ContainerItems'
+import BtnContact from '../Catalogo/BtnContact'
 
 // Utils
 import { fadeInRightVariant } from '../../utils/Variants'
