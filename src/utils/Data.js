@@ -31,6 +31,13 @@ import PettyTarteLimao from '../assets/catalogo/petty-tarte-limao.png';
 import CoracaoBrilhante from '../assets/catalogo/coracao-brilhante.png';
 import PettyTarteFrutasVermelhas from '../assets/catalogo/petty-tarte-frutas-vermelhas.png';
 import Charlotine from '../assets/catalogo/charlotine.png';
+import PettyVerreMaracuja from '../assets/catalogo/petty-verre-maracuja.png';
+import PettyVerrePistache from '../assets/catalogo/petty-verre-pistache.png';
+import PettyVerreBanoffe from '../assets/catalogo/petty-verre-banoffe.png';
+import CookiesAndCream from '../assets/catalogo/cookies-and-cream.png';
+import Camafeu from '../assets/catalogo/camafeu.png';
+import LimaoBloond from '../assets/catalogo/limao-bloond.png';
+import CasadinhoChique from '../assets/catalogo/casadinho-chique.png';
 
 
 export const gallery = [
@@ -119,10 +126,10 @@ export const brigadeirosGourmetDetails = [
   },
   {
     id: 4,
-    product_img: Empty,
+    product_img: LimaoBloond,
     product_name: 'Limão Bloond',
     product_desc: '[Consultar informações]',
-    price: 'R$ 3,20'
+    price: 'R$ 3,50'
   },
   {
     id: 5,
@@ -154,7 +161,7 @@ export const brigadeirosGourmetDetails = [
   },
   {
     id: 9,
-    product_img: Empty,
+    product_img: CasadinhoChique,
     product_name: 'Casadinho Chique',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,90'
@@ -277,10 +284,10 @@ export const bombons = [
   },
   {
     id: 6,
-    product_img: Empty,
+    product_img: CookiesAndCream,
     product_name: 'Cookies and Cream',
     product_desc: 'Chocolate branco rechado com nutella e negresco',
-    price: 'R$ 4,10'
+    price: 'R$ 3,90'
   },
   {
     id: 7,
@@ -344,7 +351,7 @@ export const pettyVerre = [
   },
   {
     id: 1,
-    product_img: Empty,
+    product_img: PettyVerreBanoffe,
     product_name: 'Banoffe',
     product_desc: 'Doce de leite, creme de banana e merengue.',
     price: 'R$5,50'
@@ -365,7 +372,7 @@ export const pettyVerre = [
   },
   {
     id: 4,
-    product_img: Empty,
+    product_img: PettyVerreMaracuja,
     product_name: 'Maracujá',
     product_desc: 'Creme de maracujá com coulis de maracujá.',
     price: 'R$ 5,50'
@@ -386,7 +393,7 @@ export const pettyVerre = [
   },
   {
     id: 7,
-    product_img: Empty,
+    product_img: PettyVerrePistache,
     product_name: 'Pistáche',
     product_desc: 'Tiramissu cremoso, cream cheese, conhaque e chantily.',
     price: 'R$ 6,80'
@@ -566,7 +573,7 @@ export const copinhosTrufados = [
 export const classicosFondados = [
   {
     id: 0,
-    product_img: Empty,
+    product_img: Camafeu,
     product_name: 'Camafeu',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,90'

@@ -18,7 +18,7 @@ import { fadeInTopVariant } from '../utils/Variants';
 
 const List = () => {
   return (
-    <PaddingContainer bottom="2rem" left="1rem" right="1rem" responsive>
+    <PaddingContainer top="2rem" bottom="2rem" left="1rem" right="1rem" responsive>
       <FlexContainer
         as={motion.div}
         variants={fadeInTopVariant}
@@ -28,20 +28,8 @@ const List = () => {
         direction="column"
         gap=".5rem"
       >
-        <Heading
-          as="h1"
-          size="h1"
-          grey
-        >
-          Catálogo
-        </Heading>
-        <Heading
-          as="h4"
-          size="h4"
-          grey
-        >
-          Esse  é o cardápio com os doces mais pedidos por aqui
-        </Heading>
+        <Heading  as="h1" size="h1" grey>Catálogo</Heading>
+        <Heading  as="h4" size="h4" grey>Esse  é o cardápio com os doces mais pedidos por aqui</Heading>
         <MyProducts />
         <Link className="link" to="/">
           <LinkContainer

@@ -10,35 +10,12 @@ import {
 const List = ({ data }) => {
   return (
     <>
-      <Image width="100%" height="164px" src={data.product_img} respImgCard draggable="false" />
-      <FlexContainer
-        direction="column"
-        padding=".75rem"
-      >
-        <Heading
-          grey
-          as="h5"
-          size="h5"
-          weight="bold"
-        >
-          { data.product_name }
-        </Heading>
-        <Heading
-          grey
-          as="p"
-          size="p"
-        >
-          { data.product_desc }
-        </Heading>
-        <FlexContainer
-          marginTop="1rem"
-          marginBottom=".5rem"
-          width="100%"
-          justify="center"
-        >
-          <Price>
-            { data.price }
-          </Price>
+      <Image width="100%" height="280px" src={data.product_img} respImgCard draggable="false" />
+      <FlexContainer  direction="column" padding=".75rem">
+        <Heading as="h5" size="h5" weight="bold" grey>{ data.product_name }</Heading>
+        <Heading as="p" size="p" grey>{ data.product_desc }</Heading>
+        <FlexContainer marginTop="1rem" marginBottom=".5rem" width="100%" justify="center">
+          <Price>{ data.price }</Price>
         </FlexContainer>
       </FlexContainer>
     </>

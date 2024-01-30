@@ -12,7 +12,7 @@ export const MainBody = styled.div`
   flex-direction: column;
   background-color: ${({ theme }) => theme.colors.bgColor};
   color: ${ColorGrey};
-  margin-top: 112px;
+  margin-top: 80px;
 
   @media (max-width: 768px) {
     margin-top: 4rem;
@@ -73,8 +73,9 @@ export const FlexContainer = styled(PaddingContainer)`
   
   @media (max-width: 600px) {
     width: ${(props) => props.respAction ? '100%' : ''};
-    width: ${(props) => props.responsiveCard ? '162px' : ''};
-    min-width: ${(props) => props.responsiveCard ? '162px' : ''};
+    width: ${(props) => props.responsiveCard ? '100%' : ''};
+    max-width: ${(props) => props.responsiveCard ? '375px' : ''};
+    min-width: ${(props) => props.responsiveCard ? '280px' : ''};
     flex-grow: ${(props) => props.responsiveCard ? '1' : ''};
     margin: ${(props) => props.responsivePadding ? '0 0 4rem 0' : ''};
     flex-direction: ${(props) => props.respAction ? 'column' : ''};
@@ -181,7 +182,7 @@ export const Image = styled.img`
     height: ${(props) => props.respWidth ? '40px' : ''};
     height: ${(props) => props.respBottom ? '120px' : ''};
     height: ${(props) => props.respHeight ? '200px' : ''};
-    height: ${(props) => props.respImgCard ? '128px' : ''};
+    height: ${(props) => props.respImgCard ? '240px' : ''};
     width: ${(props) => props.responsive ? '100%' : ''};
   };
 `;
