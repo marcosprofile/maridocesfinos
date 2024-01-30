@@ -38,6 +38,7 @@ import CookiesAndCream from '../assets/catalogo/cookies-and-cream.png';
 import Camafeu from '../assets/catalogo/camafeu.png';
 import LimaoBloond from '../assets/catalogo/limao-bloond.png';
 import CasadinhoChique from '../assets/catalogo/casadinho-chique.png';
+import OuricoDeCoco from '../assets/catalogo/ourico-de-coco.png';
 
 
 export const gallery = [
@@ -154,7 +155,7 @@ export const brigadeirosGourmetDetails = [
   },
   {
     id: 8,
-    product_img: Empty,
+    product_img: OuricoDeCoco,
     product_name: 'Ouriço de côco',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,30'
