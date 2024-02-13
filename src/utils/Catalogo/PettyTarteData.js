@@ -1,7 +1,8 @@
 import Empty from '../../assets/catalogo/empty.png'
 
-import PettyTarteLimao from '../../assets/catalogo/petty-tarte-limao.png'
-import PettyTarteFrutasVermelhas from '../../assets/catalogo/petty-tarte-frutas-vermelhas.png'
+import Limao from '../../assets/catalogo/petty-tarte-limao.png'
+import FrutasVermelhas from '../../assets/catalogo/petty-tarte-frutas-vermelhas.png'
+import Avela from '../../assets/catalogo/petty-tarte-avela.png'
 
 
 export const pettyTarte = [
@@ -14,21 +15,21 @@ export const pettyTarte = [
   },
   {
     id: 1,
-    product_img: PettyTarteLimao,
+    product_img: Limao,
     product_name: 'Limão',
     product_desc: '[Consultar informações]',
     price: 'R$3,80'
   },
   {
     id: 2,
-    product_img: PettyTarteFrutasVermelhas,
+    product_img: FrutasVermelhas,
     product_name: 'Frutas vermelhas',
     product_desc: 'Geléia de frutas vermelhas e mousse de limão siciliano.',
     price: 'R$ 4,30'
   },
   {
     id: 3,
-    product_img: Empty,
+    product_img: Avela,
     product_name: 'Avelã',
     product_desc: 'Nutella e ganache de avelã.',
     price: 'R$ 3,40'
@@ -57,8 +58,8 @@ export const pettyTarte = [
   {
     id: 7,
     product_img: Empty,
-    product_name: 'Phisalis',
-    product_desc: 'Trufa amarga com phisalis.',
+    product_name: 'Physalis',
+    product_desc: 'Trufa amarga com physalis.',
     price: 'R$ 4,10'
   },
 ]

@@ -3,6 +3,8 @@ import Empty from '../../assets/catalogo/empty.png'
 import OlhoDeSogra from '../../assets/catalogo/olho-de-sogra.png'
 import OlhoDeTigre from '../../assets/catalogo/olho-de-tigre.png'
 import Camafeu from '../../assets/catalogo/camafeu.png'
+import PresentinhoLimao from '../../assets/catalogo/presentinho-limao.png'
+import Expressinho from '../../assets/catalogo/expressinho.png'
 
 
 export const classicosFondados = [
@@ -15,14 +17,14 @@ export const classicosFondados = [
   },
   {
     id: 1,
-    product_img: Empty,
+    product_img: Expressinho,
     product_name: 'Expressinho',
     product_desc: '[Consultar informações]',
     price: 'R$3,50'
   },
   {
     id: 2,
-    product_img: Empty,
+    product_img: PresentinhoLimao,
     product_name: 'Presentinho de Limão',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,50'

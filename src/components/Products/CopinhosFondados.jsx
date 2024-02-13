@@ -21,7 +21,7 @@ export default function CopinhosFondados() {
   return (
     <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
       <FlexContainer direction="column" gap="1.5rem">
-        <Title titulo="Copinhos Fondados" />
+        <Title titulo="Doces Fondados" />
         <HeaderProducts />
         <GridContainer gap="1rem" responsiveGrid>
           {classicosFondados.map((product) => (

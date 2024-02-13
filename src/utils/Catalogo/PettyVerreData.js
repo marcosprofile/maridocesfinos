@@ -2,10 +2,11 @@ import Empty from '../../assets/catalogo/empty.png'
 
 import FrutasVermelhasGanache from '../../assets/catalogo/frutas-vermelhas-e-ganache.png'
 import FlorestaNegra from '../../assets/catalogo/floresta-negra.png'
-import PettyVerreMaracuja from '../../assets/catalogo/petty-verre-maracuja.png'
-import PettyVerrePistache from '../../assets/catalogo/petty-verre-pistache.png'
-import PettyVerreBanoffe from '../../assets/catalogo/petty-verre-banoffe.png'
+import Maracuja from '../../assets/catalogo/petty-verre-maracuja.png'
+import Pistache from '../../assets/catalogo/petty-verre-pistache.png'
+import Banoffe from '../../assets/catalogo/petty-verre-banoffe.png'
 import FrutasVermelhas from '../../assets/catalogo/frutas-vermelhas.png'
+import Limao from '../../assets/catalogo/petty-verre-limao.png'
 
 
 export const pettyVerre = [
@@ -18,14 +19,14 @@ export const pettyVerre = [
   },
   {
     id: 1,
-    product_img: PettyVerreBanoffe,
+    product_img: Banoffe,
     product_name: 'Banoffe',
     product_desc: 'Doce de leite, creme de banana e merengue.',
     price: 'R$5,50'
   },
   {
     id: 2,
-    product_img: Empty,
+    product_img: Limao,
     product_name: 'Limão',
     product_desc: 'Base de cookies cremoso de limão e chantily',
     price: 'R$ 5,50'
@@ -39,7 +40,7 @@ export const pettyVerre = [
   },
   {
     id: 4,
-    product_img: PettyVerreMaracuja,
+    product_img: Maracuja,
     product_name: 'Maracujá',
     product_desc: 'Creme de maracujá com coulis de maracujá.',
     price: 'R$ 5,50'
@@ -60,7 +61,7 @@ export const pettyVerre = [
   },
   {
     id: 7,
-    product_img: PettyVerrePistache,
+    product_img: Pistache,
     product_name: 'Pistáche',
     product_desc: 'Tiramissu cremoso, cream cheese, conhaque e chantily.',
     price: 'R$ 6,80'

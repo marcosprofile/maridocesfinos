@@ -6,6 +6,9 @@ import BombomTropical from '../../assets/catalogo/bombom-tropical.png'
 import TroxinhaDeCoco from '../../assets/catalogo/troxinha-de-coco.png'
 import CoracaoBrilhante from '../../assets/catalogo/coracao-brilhante.png'
 import CookiesAndCream from '../../assets/catalogo/cookies-and-cream.png'
+import Caramelo from '../../assets/catalogo/bombom-de-caramelo.png'
+import TrufaDeNozes from '../../assets/catalogo/trufa-de-nozes.png'
+import CaixinhaDePistache from '../../assets/catalogo/caixinha-de-pistache.png'
 
 
 export const bombons = [
@@ -39,14 +42,14 @@ export const bombons = [
   },
   {
     id: 4,
-    product_img: Empty,
-    product_name: 'Bombom ao Caramelo',
+    product_img: Caramelo,
+    product_name: 'Bombom de Caramelo',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,10'
   },
   {
     id: 5,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Trufa de Nozes',
     product_desc: 'Trufa de nozes banhada no chocolate branco',
     price: 'R$3,30'
@@ -67,42 +70,42 @@ export const bombons = [
   },
   {
     id: 8,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Bombom de Cappuccino',
     product_desc: 'Chocolate ao leite com recheio cremoso de café aerado.',
     price: 'R$ 3,10'
   },
   {
     id: 9,
-    product_img: Empty,
-    product_name: 'Bombom de Pistáche',
+    product_img: CaixinhaDePistache,
+    product_name: 'Caixinha de Pistáche',
     product_desc: 'Chocolate ao leite com recheio cremoso pett blend.',
-    price: 'R$ 5,60'
+    price: 'R$ 4,90'
   },
   {
     id: 10,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Bombom de Caipirinha',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,30'
   },
   {
     id: 11,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Trufa de Cappuccino cremosa',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,50'
   },
   {
     id: 12,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Bombom de Maracujá',
     product_desc: 'Chocolate ao leite e ganache de maracujá.',
     price: 'R$ 3,10'
   },
   {
     id: 13,
-    product_img: Empty,
+    product_img: TrufaDeNozes,
     product_name: 'Bombom de Amarula',
     product_desc: 'Chocolate ao leite, creme de ganache e amarula.',
     price: 'R$ 3,10'

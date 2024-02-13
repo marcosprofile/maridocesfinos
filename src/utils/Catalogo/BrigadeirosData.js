@@ -4,6 +4,10 @@ import LimaoBloond from '../../assets/catalogo/limao-bloond.png'
 import UvaCristal from '../../assets/catalogo/uva-cristal.png'
 import OuricoDeCoco from '../../assets/catalogo/ourico-de-coco.png'
 import CasadinhoChique from '../../assets/catalogo/casadinho-chique.png'
+import Chocolate from '../../assets/catalogo/chocolate.png'
+import Churros from '../../assets/catalogo/churros.png'
+import NinhoNutella from '../../assets/catalogo/ninho-com-nutella.png'
+import Coco from '../../assets/catalogo/coco.png'
 
 
 export const brigadeiros = [
@@ -79,7 +83,7 @@ export const brigadeiros = [
   },
   {
     id: 10,
-    product_img: Empty,
+    product_img: Coco,
     product_name: 'Côco',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,10'
@@ -114,14 +118,14 @@ export const brigadeiros = [
   },
   {
     id: 15,
-    product_img: Empty,
-    product_name: 'Nutella',
+    product_img: NinhoNutella,
+    product_name: 'Ninho c/ nutella',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,20'
   },
   {
     id: 16,
-    product_img: Empty,
+    product_img: Churros,
     product_name: 'Churros',
     product_desc: '[Consultar informações]',
     price: 'R$ 2,90'
@@ -142,7 +146,7 @@ export const brigadeiros = [
   },
   {
     id: 19,
-    product_img: Empty,
+    product_img: Chocolate,
     product_name: 'Chocolate',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,30'
