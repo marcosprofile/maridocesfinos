@@ -1,5 +1,4 @@
-import Empty from '../../assets/catalogo/empty.png'
-
+// import Empty from '../../assets/catalogo/empty.png'
 import BombomMacico from '../../assets/catalogo/bombom-macico.png'
 import CerejaCamuflada from '../../assets/catalogo/cereja-camuflada.png'
 import BombomTropical from '../../assets/catalogo/bombom-tropical.png'
