@@ -1,10 +1,12 @@
-import Empty from '../../assets/catalogo/empty.png'
+// import Empty from '../../assets/catalogo/empty.png'
 
 import OlhoDeSogra from '../../assets/catalogo/olho-de-sogra.png'
 import OlhoDeTigre from '../../assets/catalogo/olho-de-tigre.png'
 import Camafeu from '../../assets/catalogo/camafeu.png'
 import PresentinhoLimao from '../../assets/catalogo/presentinho-limao.png'
 import Expressinho from '../../assets/catalogo/expressinho.png'
+import OlhoDeSogro from '../../assets/catalogo/df-olho-de-sogra.png'
+import Morango from '../../assets/catalogo/morango.png'
 
 
 export const classicosFondados = [
@@ -38,7 +40,7 @@ export const classicosFondados = [
   },
   {
     id: 4,
-    product_img: Empty,
+    product_img: OlhoDeSogro,
     product_name: 'Olho de Sogro',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,50'
@@ -52,7 +54,7 @@ export const classicosFondados = [
   },
   {
     id: 6,
-    product_img: Empty,
+    product_img: Morango,
     product_name: 'Morango ao Champanhe',
     product_desc: '[Consultar informações]',
     price: 'R$ 4,20'

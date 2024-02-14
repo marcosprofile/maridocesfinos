@@ -8,6 +8,8 @@ import Physalis from '../../assets/catalogo/physalis.png'
 import CaixetaDeFrutas from '../../assets/catalogo/caixeta-de-frutas.png'
 import CaixetaDeCocoCereja from '../../assets/catalogo/caixeta-de-coco-cereja.png'
 import Nutella from '../../assets/catalogo/nutella.png'
+import CaixinhaAbacaxi from '../../assets/catalogo/caixinha-de-abacaxi.png'
+import Morango from '../../assets/catalogo/copinho-trufado-morango.png'
 
 
 export const copinhosTrufados = [
@@ -34,7 +36,7 @@ export const copinhosTrufados = [
   },
   {
     id: 3,
-    product_img: Empty,
+    product_img: CaixinhaAbacaxi,
     product_name: 'Caixeta de Abacaxi com Côco',
     product_desc: 'Caixeta de chocolate ao leite, creme de côco e abacaxi finalizado com petalas de côco.',
     price: 'R$ 3,50'
@@ -55,7 +57,7 @@ export const copinhosTrufados = [
   },
   {
     id: 6,
-    product_img: Empty,
+    product_img: Morango,
     product_name: 'Copinho Trufado de Morango',
     product_desc: '[Consultar informações]',
     price: 'R$3,90'

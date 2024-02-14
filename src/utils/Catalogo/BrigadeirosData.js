@@ -8,6 +8,8 @@ import Chocolate from '../../assets/catalogo/chocolate.png'
 import Churros from '../../assets/catalogo/churros.png'
 import NinhoNutella from '../../assets/catalogo/ninho-com-nutella.png'
 import Coco from '../../assets/catalogo/coco.png'
+import CremeBrulee from '../../assets/catalogo/baunilha-brulee.png'
+import Pistache from '../../assets/catalogo/brigadeiro-pistache.png'
 
 
 export const brigadeiros = [
@@ -34,10 +36,10 @@ export const brigadeiros = [
   },
   {
     id: 3,
-    product_img: Empty,
+    product_img: CremeBrulee,
     product_name: 'Creme Brûlée',
     product_desc: '[Consultar informações]',
-    price: 'R$ 2,80'
+    price: 'R$ 3,00'
   },
   {
     id: 4,
@@ -97,10 +99,10 @@ export const brigadeiros = [
   },
   {
     id: 12,
-    product_img: Empty,
-    product_name: 'Brigadeiro pistache',
+    product_img: Pistache,
+    product_name: 'Brigadeiro de pistache',
     product_desc: '[Consultar informações]',
-    price: 'R$ 7,00'
+    price: 'R$ 4,50'
   },
   {
     id: 13,
