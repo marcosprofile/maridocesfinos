@@ -1,4 +1,4 @@
-import Empty from '../../assets/catalogo/empty.png'
+// import Empty from '../../assets/catalogo/empty.png'
 
 import BlueBerry from '../../assets/catalogo/blueberry.png'
 import CopinhoTrufadoCereja from '../../assets/catalogo/copinho-trufado-cereja.png'
@@ -43,76 +43,41 @@ export const copinhosTrufados = [
   },
   {
     id: 4,
-    product_img: Empty,
-    product_name: 'Copinho Cremoso de Damasco',
-    product_desc: 'Cream cheese.',
-    price: 'R$ 4,50'
-  },
-  {
-    id: 5,
     product_img: CopinhoTrufadoCereja,
     product_name: 'Copinho Trufado de Cereja',
     product_desc: '[Consultar informações]',
     price: 'R$4,30'
   },
   {
-    id: 6,
+    id: 5,
     product_img: Morango,
     product_name: 'Copinho Trufado de Morango',
     product_desc: '[Consultar informações]',
     price: 'R$3,90'
   },
   {
-    id: 7,
-    product_img: Empty,
-    product_name: 'Quadradinho de Mel',
-    product_desc: '[Consultar informações]',
-    price: 'R$3,90'
-  },
-  {
-    id: 8,
+    id: 6,
     product_img: CaixetaDeCocoCereja,
     product_name: 'Caixeta de Côco com Cereja',
     product_desc: 'Creme de Côco, chocolate ao leite e cereja para decorar.',
     price: 'R$ 4,10'
   },
   {
-    id: 9,
-    product_img: Empty,
-    product_name: 'Bananinha Elegante',
-    product_desc: 'Creme de banana e nutella.',
-    price: 'R$ 3,40'
-  },
-  {
-    id: 10,
+    id: 7,
     product_img: Charlotine,
     product_name: 'Charlotine',
     product_desc: 'Caixeta de chocolate ao leite, figo em calda, xerem de castanha e caju.',
     price: 'R$ 4,10'
   },
   {
-    id: 11,
-    product_img: Empty,
-    product_name: 'Frutas Vermelhas',
-    product_desc: 'Geléia de frutas vermelhas e mousse de limão siciliano.',
-    price: 'R$ 4,30'
-  },
-  {
-    id: 12,
-    product_img: Empty,
-    product_name: 'Tortinha de Amarula',
-    product_desc: 'Ganache de licor de amarula.',
-    price: 'R$ 3,80'
-  },
-  {
-    id: 13,
+    id: 8,
     product_img: Physalis,
     product_name: 'Physalis',
     product_desc: 'Trufa amarga com phisalis.',
     price: 'R$ 4,50'
   },
   {
-    id: 14,
+    id: 9,
     product_img: Nutella,
     product_name: 'Nutella',
     product_desc: '[Consultar informações]',

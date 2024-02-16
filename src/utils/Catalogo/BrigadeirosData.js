@@ -1,4 +1,4 @@
-import Empty from '../../assets/catalogo/empty.png'
+// import Empty from '../../assets/catalogo/empty.png'
 
 import LimaoBloond from '../../assets/catalogo/limao-bloond.png'
 import UvaCristal from '../../assets/catalogo/uva-cristal.png'
@@ -15,139 +15,69 @@ import Pistache from '../../assets/catalogo/brigadeiro-pistache.png'
 export const brigadeiros = [
   {
     id: 0,
-    product_img: Empty,
-    product_name: 'Merengue de limão',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,80'
-  },
-  {
-    id: 1,
-    product_img: Empty,
-    product_name: 'Romeu e julieta',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,70'
-  },
-  {
-    id: 2,
-    product_img: Empty,
-    product_name: 'Bicho de pé',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,50'
-  },
-  {
-    id: 3,
     product_img: CremeBrulee,
     product_name: 'Creme Brûlée',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,00'
   },
   {
-    id: 4,
+    id: 1,
     product_img: LimaoBloond,
     product_name: 'Limão Bloond',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,50'
   },
   {
-    id: 5,
-    product_img: Empty,
-    product_name: 'Côco com abacaxi',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 3,25'
-  },
-  {
-    id: 6,
+    id: 2,
     product_img: UvaCristal,
     product_name: 'Uva Cristal',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,65'
   },
   {
-    id: 7,
-    product_img: Empty,
-    product_name: 'Oreo',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 3,50'
-  },
-  {
-    id: 8,
+    id: 3,
     product_img: OuricoDeCoco,
     product_name: 'Ouriço de côco',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,30'
   },
   {
-    id: 9,
+    id: 4,
     product_img: CasadinhoChique,
     product_name: 'Casadinho Chique',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,90'
   },
   {
-    id: 10,
+    id: 5,
     product_img: Coco,
     product_name: 'Côco',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,10'
   },
   {
-    id: 11,
-    product_img: Empty,
-    product_name: 'Licor de amarula c/ ampôla',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 3,80'
-  },
-  {
-    id: 12,
+    id: 6,
     product_img: Pistache,
     product_name: 'Brigadeiro de pistache',
     product_desc: '[Consultar informações]',
     price: 'R$ 4,50'
   },
   {
-    id: 13,
-    product_img: Empty,
-    product_name: 'Beijinho',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,80'
-  },
-  {
-    id: 14,
-    product_img: Empty,
-    product_name: 'Brigadeiro',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,80'
-  },
-  {
-    id: 15,
+    id: 7,
     product_img: NinhoNutella,
     product_name: 'Ninho c/ nutella',
     product_desc: '[Consultar informações]',
     price: 'R$ 3,20'
   },
   {
-    id: 16,
+    id: 8,
     product_img: Churros,
     product_name: 'Churros',
     product_desc: '[Consultar informações]',
     price: 'R$ 2,90'
   },
   {
-    id: 17,
-    product_img: Empty,
-    product_name: 'Maracujá',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 2,90'
-  },
-  {
-    id: 18,
-    product_img: Empty,
-    product_name: 'Limão',
-    product_desc: '[Consultar informações]',
-    price: 'R$ 3,10'
-  },
-  {
-    id: 19,
+    id: 9,
     product_img: Chocolate,
     product_name: 'Chocolate',
     product_desc: '[Consultar informações]',

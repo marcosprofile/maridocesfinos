@@ -23,7 +23,7 @@ export default function Information() {
           <InfoList info="Trabalhamos com contrato." grey={true} />
           <InfoList info="Pedidos com antecedência (mediante disponibilidade de data)." grey={true} />
           <InfoList info="Todos os doces serão entregues em formas de acetato transparente." grey={true} />
-          <InfoList info="Pagamentos via transferência bancária em pix." grey={true} />
+          <InfoList info="Aceitamos pagamentos via transferência bancária, cartão de débito/crédito ou pix." grey={true} />
           <InfoList info="A encomenda só será confirmada após o pagamento de 30% do valor do pedido." grey={true} />
           <InfoList info="Os pedidos podem ser feitos através do whatsapp: (11) 96976-1802" grey={true} />
           <InfoList info="Todos os doces são feitos de forma artesanal, com insumos de primeira qualidade. Não usamos conservantes." grey={true} />
