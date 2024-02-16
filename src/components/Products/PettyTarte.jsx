@@ -20,7 +20,7 @@ import { fadeInLeftVariant } from './../../utils/Variants'
 export default function PettyTarte() {
   return (
     <ContainerItems motion={motion.div} slide={fadeInLeftVariant}>
-      <FlexContainer direction="column" gap="1.5rem">
+      <FlexContainer direction="column" gap="1.5rem" width="100%">
         <Title titulo="Petty Tarte" />
         <HeaderProducts />
         <GridContainer gap="1rem" responsiveGrid>

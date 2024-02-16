@@ -23,7 +23,7 @@ export default function CaixaDeDegustacao() {
         <InfoList info="Não possuímos serviços de entrega da caixa (retirar pessoalmente ou solicitar uber flash)" grey={true} />
         <InfoList info="A caixa contém 15 sabores sortidos" grey={true} />
         <InfoList info="Ofereçemos degustação presencial com agendamento" grey={true} />
-        <InfoList info="Pagamento via pix no momento da reserva" grey={true} />
+        <InfoList info="Aceitamos pagamentos via transferência bancária, cartão de débito/crédito ou pix." grey={true} />
         <FlexContainer justify="center" top="2rem">
           <BtnContact value="Solicitar degustação" color="Primary" />
         </FlexContainer>
