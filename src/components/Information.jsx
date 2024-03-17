@@ -20,7 +20,7 @@ export default function Information() {
       >
         <Title titulo="Informações" /> 
         <FlexContainer direction="column" gap=".75rem">
-          <InfoList info="Trabalhamos com contrato." color="grey" />
+          <InfoList info="Trabalhamos com contrato." />
           <InfoList info="Pedidos com antecedência (mediante disponibilidade de data)." />
           <InfoList info="Todos os doces serão entregues em formas de acetato transparente." />
           <InfoList info="Aceitamos pagamentos via transferência bancária, cartão de débito/crédito ou pix." />

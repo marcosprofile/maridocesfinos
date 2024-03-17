@@ -52,10 +52,10 @@ const About = () => {
             width="100%"
             gap="1.5rem"
           >
-            <InfoList info="A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa." color="grey" />
-            <InfoList info="Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial." color="grey" />
-            <InfoList info="Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!" color="grey" />
-            <InfoList info="Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa." color="grey" />
+            <InfoList info="A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa." />
+            <InfoList info="Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial." />
+            <InfoList info="Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!" />
+            <InfoList info="Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa." />
             <FlexContainer top="2.5rem" align="center" gap="2.5rem" direction="column" respAction>
               <Heading as="p" size="p" color="grey">
                 Ficou interessada(o)? Entre em contato comigo.
