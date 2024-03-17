@@ -5,7 +5,6 @@ import InfoList from './InfoList/InfoList'
 
 import {
   FlexContainer,
-  Heading,
   Image,
   PaddingContainer
 } from '../styles/Global.styled'
@@ -14,6 +13,7 @@ import BottomImage from '../assets/bottom.png'
 import TopImage from '../assets/top.png'
 
 import { fadeInRightVariant, fadeInTopVariant } from '../utils/Variants'
+import Title from './Catalogo/Title'
 
 
 const Tasting = () => {
@@ -28,9 +28,9 @@ const Tasting = () => {
         initial="hidden"
         whileInView="visible"
       >
-        <Heading as="h2" size="h2">Degustação</Heading>
+        <Title titulo="Degustação" />
       </FlexContainer>
-      <PaddingContainer top="5rem" bottom="2rem" left="240px" right="240px" responsive bgBlue>
+      <PaddingContainer top="5rem" bottom="2rem" left="240px" right="240px" responsive>
         <FlexContainer align="center">
           <FlexContainer
             as={motion.div}
@@ -41,11 +41,11 @@ const Tasting = () => {
             width="100%"
             gap="1.5rem"
           >
-            <InfoList info="A degustação é uma forma do cliente conhecer nosso trabalho antes de fechar o pedido e para conhecer sabores, texturas e apresentação dos doces." grey={false} />
-            <InfoList info="A degustação pode ser presencial com agendamento prévio ou caixa de degustação com 15 doces." grey={false} />
-            <InfoList info="A degustação possui um valor que será abatido caso o contrato seja fechado no prazo de 7 dias." grey={false} />
+            <InfoList info="A degustação é uma forma do cliente conhecer nosso trabalho antes de fechar o pedido e para conhecer sabores, texturas e apresentação dos doces." />
+            <InfoList info="A degustação pode ser presencial com agendamento prévio ou caixa de degustação com 15 doces." />
+            <InfoList info="A degustação possui um valor que será abatido caso o contrato seja fechado no prazo de 7 dias." />
             <FlexContainer justify="center" top="2rem">
-              <Button color="Primary" value="Solicitar degustação" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20solicitar%20a%20degustação" />
+              <Button bgLink="Primary" value="Solicitar degustação" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20solicitar%20a%20degustação" />
             </FlexContainer>
           </FlexContainer>
         </FlexContainer>

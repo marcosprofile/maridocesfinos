@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 
-import {
-  Secondary,
-  StrokeBorder,
-  ColorGrey,
-  BlueColor
-} from '../utils/Theme';
+import { theme } from '../utils/Theme';
 
 export const MainBody = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.colors.bgColor};
-  color: ${ColorGrey};
+  background-color: ${theme.colors.bgColor};
+  color: ${theme.colors.textColor};
   margin-top: 80px;
 
   @media (max-width: 768px) {
@@ -20,7 +15,8 @@ export const MainBody = styled.div`
 `;
 
 export const PaddingContainer = styled.div`
-  background-color: ${(props) => props.bgBlue ? BlueColor : ''};
+  background-color: ${(props) => props.bgTheme ? `${theme.colors.bgColor}` : ''};
+  background-color: ${(props) => props.bgLight ? `${theme.colors.light}` : ''};
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   padding-top: ${({ top }) => top};
@@ -62,7 +58,7 @@ export const FlexContainer = styled(PaddingContainer)`
   min-width: ${({ minWidth }) => minWidth};
   align-items: ${({ align }) => align};
   border-radius: ${({ radius }) => radius};
-  border: ${(props) => props.border ? `1px solid ${StrokeBorder}` : ''};
+  border: ${(props) => props.border ? `1px solid ${theme.colors.strokeBorder}` : ''};
   gap: ${({ gap }) => gap};
   overflow: ${({ overflow }) => overflow};
   font-weight: ${({ fontWeight }) => fontWeight};
@@ -87,13 +83,13 @@ export const StyledHeader = styled.header`
   align-items: center;
   position: fixed;
   top: 0;
-  background: #081130;
+  background: ${theme.colors.bgColor};
   padding: 0 80px;
   width: 100%;
   height: 80px;
   align-items: center;
   gap: 4rem;
-  border-bottom: 1px solid #7E868E10;
+  box-shadow: 0px 12px 16px 0px ${theme.colors.black20};
   z-index: 20;
 
   @media(max-width: 1024px) {
@@ -109,7 +105,18 @@ export const NavBar = styled(FlexContainer).attrs({ as: 'nav' })`
 `;
 
 export const Heading = styled(PaddingContainer)`
-  color: ${(props) => props.grey ? ColorGrey : 'white'};
+  color: ${({ color }) => {
+    switch(color) {
+      case 'primary':
+        return `${theme.colors.primary}`;
+
+      case 'grey':
+        return `${theme.colors.textColor}`;
+
+      default:
+        return `${theme.colors.light}`;
+    }
+  }};
   font-weight: ${({ weight }) => weight};
   text-align: ${({ align }) => align};
   line-height: 156%;
@@ -190,13 +197,13 @@ export const Image = styled.img`
 export const LinkContainer = styled(FlexContainer)`
   font-size: 18px;
   font-weight: 500;
-  background-color: ${({ color }) => {
-      switch(color) {
+  background-color: ${({ bgLink }) => {
+      switch(bgLink) {
         case 'Primary':
-          return '#FED84C';
+          return `${theme.colors.primary}`;
         
         case 'Secondary':
-          return '#F2F6FA';
+          return `${theme.colors.secondary}`;
 
         default:
           return 'transparent';
@@ -205,13 +212,13 @@ export const LinkContainer = styled(FlexContainer)`
   color: ${({ color }) => {
       switch(color) {
         case 'Primary':
-          return '#2E363E';
+          return `${theme.colors.primary}`;
         
         case 'Secondary':
-          return '#2E363E';
+          return `${theme.colors.textColor}`;
 
         default:
-          return '#FFFFFF';
+          return `${theme.colors.light}`;
       };
   }} !important;
   transition: all .2s linear;
@@ -229,15 +236,15 @@ export const LinkContainer = styled(FlexContainer)`
   };
 `;
 
-export const BgColor = styled(FlexContainer)`
+export const CtaButton = styled(FlexContainer)`
   border-radius: .5rem;
   background-color: ${({ color }) => {
       switch(color) {
         case 'Primary':
-          return '#FED84C';
+          return `${theme.colors.primary}`;
         
         case 'Secondary':
-          return '#F2F6FA';
+          return `${theme.colors.secondary}`;
 
         default:
           return 'transparent';
@@ -246,13 +253,13 @@ export const BgColor = styled(FlexContainer)`
   color: ${({ color }) => {
       switch(color) {
         case 'Primary':
-          return '#2E363E';
+          return `${theme.colors.textColor}`;
         
         case 'Secondary':
-          return '#2E363E';
+          return `${theme.colors.textColor}`;
 
         default:
-          return '#FFFFFF';
+          return `${theme.colors.light}`;
       };
   }} !important;
   transition: all .2s linear;
@@ -267,7 +274,8 @@ export const RouterLink = styled(LinkContainer).attrs({ as: 'a'})`
 `;
 
 export const Badge = styled(FlexContainer)`
-  background: ${Secondary};
+  background: ${theme.colors.badge};
+  color: ${theme.colors.primary};
 `
 
 export const StyledButton = styled(RouterLink).attrs({ as: 'button'})`
@@ -314,7 +322,7 @@ export const GridItem = styled.div`
   overflow: hidden;
   width: 100%;
   max-width: ${(props) => props.maxWidth ? '380px' : ''};
-  border: ${(props) => props.border ? `1px solid ${Secondary}` : ''};
+  border: ${(props) => props.border ? `1px solid ${theme.colors.secondary}` : ''};
   
   @media (max-width: 600px) {
     max-width: ${(props) => props.maxWidth ? '100%' : ''};
@@ -331,16 +339,16 @@ export const GridDesc = styled.div`
 `;
 
 export const Icon = styled(FlexContainer)`
-  color: ${(props) => props.point ? '#5D6AFB' : ''};
+  color: ${(props) => props.point ? `${theme.colors.primary}` : ''};
 `;
 
 export const ContainerContact = styled(FlexContainer)`
   width: 100%;
   max-width: 1180px;
   padding: 70px 150px;
-  background-color: #FFF;
+  background-color: ${theme.colors.light};
   border-radius: 1rem;
-  box-shadow: 0px 10px 25px 0px rgba(195, 200, 215, 0.70);
+  box-shadow: 0 10px 25px 0 ${theme.colors.shadow};
 
   @media (max-width: 768px) {
     padding: 1.5rem;
@@ -363,10 +371,10 @@ export const Banner = styled(FlexContainer)`
   display: grid;
   place-items: center;
   width: 100%;
-  background: #00000030;
+  background: ${theme.colors.banner};
   -webkit-backdrop-filter: blur(.75rem);
   backdrop-filter: blur(.75rem);
-  color: #FFFFFF;
+  color: ${theme.colors.light};
   font-size: 2.5rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
@@ -380,8 +388,8 @@ export const Banner = styled(FlexContainer)`
 `
 
 export const Price = styled.div`
-  background: #5663FB15;
-  color: #5663FB;
+  background: ${theme.colors.bgColor}50;
+  color: ${theme.colors.primary};
   font-weight: bold;
   padding: .25rem .75rem;
   border-radius: 8rem;

@@ -8,7 +8,7 @@ export default function InfoList(props) {
       <Icon top=".05rem" point>
         <BsFillRecordFill />
       </Icon>
-      <Heading as="p" size="p" weight="400" bottom="0" align="left" grey={props.grey}>
+      <Heading as="p" size="p" weight="400" bottom="0" align="left" color="grey">
         {props.info}
       </Heading>
     </FlexContainer>

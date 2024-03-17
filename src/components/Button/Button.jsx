@@ -13,6 +13,7 @@ export default function Button(props) {
       radius=".5rem"
       href={props.link}
       target="_blank"
+      bgLink={props.bgLink}
       color={props.color}
       respLink
     >

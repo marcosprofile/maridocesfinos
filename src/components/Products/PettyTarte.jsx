@@ -31,7 +31,7 @@ export default function PettyTarte() {
           ))}
         </GridContainer>
         <FlexContainer justify="center" top="2rem">
-          <BtnContact value="Consultar mais sabores" color="Primary" />
+          <BtnContact bgLink="Primary" value="Consultar mais sabores" />
         </FlexContainer>
       </FlexContainer>
     </ContainerItems>

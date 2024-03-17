@@ -42,10 +42,10 @@ const Header = () => {
       </Link>
       <NavBar gap="2.5rem" align="center">
         <Link to="/" onClick={scrollToTop}>
-          <LinkContainer>Início</LinkContainer>
+          <LinkContainer color="Primary">Início</LinkContainer>
         </Link>
         <Link to="/catalogo" onClick={scrollToTop}>
-          <LinkContainer>Catálogo</LinkContainer>
+          <LinkContainer color="Primary">Catálogo</LinkContainer>
         </Link>
       </NavBar>
         

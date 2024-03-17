@@ -17,6 +17,7 @@ import BottomImage from '../assets/bottom.png'
 /* Animations */
 import { fadeInTopVariant } from '../utils/Variants'
 import Button from './Button/Button';
+import Title from './Catalogo/Title'
 
 const About = () => {
   return (
@@ -30,7 +31,7 @@ const About = () => {
         justify="center"
         top="3rem"
       >
-        <Heading as="h2" size="h2">Sobre</Heading>
+        <Title titulo="Sobre" />
       </FlexContainer>
       <PaddingContainer
         top="5rem"
@@ -51,15 +52,15 @@ const About = () => {
             width="100%"
             gap="1.5rem"
           >
-            <InfoList info="A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa." grey={false} />
-            <InfoList info="Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial." grey={false} />
-            <InfoList info="Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!" grey={false} />
-            <InfoList info="Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa." grey={false} />
+            <InfoList info="A mesa de doces é o ápice da sua festa e a última memória que seu convidado lembrará com saudades da sua festa." color="grey" />
+            <InfoList info="Ela deve ser encantadora e refletir todo cuidado que você planejou para seus convidados para esse momento especial." color="grey" />
+            <InfoList info="Estou aqui para te ajudar a planejar a mesa de doces mais linda e deliciosa que você já viu, tornando sua festa inesquecível!" color="grey" />
+            <InfoList info="Todos os doces são entregues em forminhas de acetato transparente, para que o doce seja o astro principal da mesa." color="grey" />
             <FlexContainer top="2.5rem" align="center" gap="2.5rem" direction="column" respAction>
-              <Heading as="p" size="p">
+              <Heading as="p" size="p" color="grey">
                 Ficou interessada(o)? Entre em contato comigo.
               </Heading>
-              <Button color="Primary" value="WhatsApp" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
+              <Button bgLink="Primary" value="WhatsApp" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20realizar%20um%20orçamento" />
             </FlexContainer>
           </FlexContainer>
           <FlexContainer

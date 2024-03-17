@@ -15,6 +15,7 @@ import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 import RightImage from '../assets/img_1.png'
 import BottomImage from '../assets/bottom.png'
 import Button from './Button/Button'
+import Title from './Catalogo/Title'
 
 const Showcase = () => {
   return (
@@ -42,16 +43,14 @@ const Showcase = () => {
             <Badge padding=".5rem .75rem" radius=".5rem" fontWeight="600">
               DELICIOSO
             </Badge>
-            <Heading  as="h2" size="h2" weight="bold" bottom="0">
-              Doces finos para casamentos e festas em geral. Com entrega em São Paulo e Região
-            </Heading>
+            <Title titulo="Doces finos para casamentos e festas em geral. Com entrega em São Paulo e Região" />
             <FlexContainer top="2.5rem" align="center" gap="1rem" respAction>
               <Link className="link" to="/catalogo">
               <FlexContainer justify="center">
-                <Button color="Primary" value="Ir para o catálogo" />
+                <Button bgLink="Primary" value="Ir para o catálogo" />
               </FlexContainer>
               </Link>
-              <Heading as="h6" size="h6" bottom="0">
+              <Heading as="h6" size="h6" bottom="0" color="grey">
                 +10 tipos diferentes para escolher
               </Heading>
             </FlexContainer>

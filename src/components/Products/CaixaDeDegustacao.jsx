@@ -25,7 +25,7 @@ export default function CaixaDeDegustacao() {
         <InfoList info="Ofereçemos degustação presencial com agendamento" grey={true} />
         <InfoList info="Aceitamos pagamentos via transferência bancária, cartão de débito/crédito ou pix." grey={true} />
         <FlexContainer justify="center" top="2rem">
-          <BtnContact value="Solicitar degustação" color="Primary" />
+          <BtnContact bgLink="Primary" value="Consultar mais sabores" />
         </FlexContainer>
       </FlexContainer>
     </ContainerItems>
