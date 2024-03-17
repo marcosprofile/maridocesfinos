@@ -291,6 +291,7 @@ export const StyledButton = styled(RouterLink).attrs({ as: 'button'})`
 
 export const MenuButton = styled(StyledButton)`
   display: none;
+  color: ${theme.colors.primary} !important;
 
   @media (max-width: 1024px) {
     display: block;
