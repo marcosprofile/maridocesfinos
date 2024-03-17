@@ -73,13 +73,13 @@ const Header = () => {
         <div className="offcanvas-body">
           <PaddingContainer height="4rem"></PaddingContainer>
           <Link to="/" onClick={() => { closeMenu(); window.location.href = '/'; }}>
-            <Heading as="h1" size="h1" align="center" grey>
+            <Heading as="h1" size="h1" align="center" color="primary">
               Início
             </Heading>
             </Link>
             <PaddingContainer height="2rem"></PaddingContainer>
             <Link to="/catalogo" onClick={() => { closeMenu(); window.location.href = '/catalogo'; }}>
-              <Heading as="h1" size="h1" align="center" grey>
+              <Heading as="h1" size="h1" align="center" color="primary">
                 Catálogo
               </Heading>
             </Link>
