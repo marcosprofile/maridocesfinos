@@ -39,7 +39,7 @@ export const brigadeiros = [
     product_img: OuricoDeCoco,
     product_name: 'Ouriço de côco',
     product_desc: '[Consultar informações]',
-    price: 'R$ 3,30'
+    price: 'R$ 3,90'
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const brigadeiros = [
     product_img: Pistache,
     product_name: 'Brigadeiro de pistache',
     product_desc: '[Consultar informações]',
-    price: 'R$ 4,50'
+    price: 'R$ 5,10'
   },
   {
     id: 7,

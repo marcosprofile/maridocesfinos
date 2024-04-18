@@ -44,7 +44,7 @@ export const bombons = [
     product_img: Caramelo,
     product_name: 'Bombom de Caramelo',
     product_desc: '[Consultar informações]',
-    price: 'R$ 3,10'
+    price: 'R$ 3,20'
   },
   {
     id: 5,
@@ -65,21 +65,21 @@ export const bombons = [
     product_img: CoracaoBrilhante,
     product_name: 'Coração brilhante',
     product_desc: 'Chocolate branco, geléia, ganache de conhaque.',
-    price: 'R$ 3,50'
+    price: 'R$ 3,90'
   },
   {
     id: 8,
     product_img: TrufaDeNozes,
     product_name: 'Bombom de Cappuccino',
     product_desc: 'Chocolate ao leite com recheio cremoso de café aerado.',
-    price: 'R$ 3,10'
+    price: 'R$ 3,20'
   },
   {
     id: 9,
     product_img: CaixinhaDePistache,
     product_name: 'Caixinha de Pistáche',
     product_desc: 'Chocolate ao leite com recheio cremoso pett blend.',
-    price: 'R$ 4,90'
+    price: 'R$ 5,80'
   },
   {
     id: 10,
@@ -107,6 +107,6 @@ export const bombons = [
     product_img: TrufaDeNozes,
     product_name: 'Bombom de Amarula',
     product_desc: 'Chocolate ao leite, creme de ganache e amarula.',
-    price: 'R$ 3,10'
+    price: 'R$ 3,50'
   }
 ]
