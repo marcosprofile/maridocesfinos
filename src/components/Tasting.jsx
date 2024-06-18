@@ -31,14 +31,14 @@ const Tasting = () => {
         <Title titulo="Degustação" />
       </FlexContainer>
       <PaddingContainer top="5rem" bottom="2rem" left="240px" right="240px" responsive>
-        <FlexContainer align="center">
+        <FlexContainer align="center" justify="center">
           <FlexContainer
             as={motion.div}
             variants={fadeInRightVariant}
             initial="hidden"
             whileInView="visible"
             direction="column"
-            width="100%"
+            justify="center"
             gap="1.5rem"
           >
             <InfoList info="Sabores dos doces sortidos de acordo com a produção da semana." />
