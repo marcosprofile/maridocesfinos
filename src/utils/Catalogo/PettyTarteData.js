@@ -18,7 +18,7 @@ export const pettyTarte = [
     product_img: FrutasVermelhas,
     product_name: 'Frutas vermelhas',
     product_desc: 'Geléia de frutas vermelhas e mousse de limão siciliano.',
-    price: 'R$ 4,30'
+    price: 'R$ 4,50'
   },
   {
     id: 2,

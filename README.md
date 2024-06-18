@@ -1,6 +1,6 @@
 # Landing Page
 
-> 🔗 Ver projeto <https://maridocesfinos.vercel.app/>
+> 🔗 [Ver projeto](https://maridocesfinos.vercel.app/)
 
 <br>
 

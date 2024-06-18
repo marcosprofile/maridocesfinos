@@ -29,7 +29,7 @@ export const pettyVerre = [
     product_img: FlorestaNegra,
     product_name: 'Floresta Negra',
     product_desc: 'Creme de cereja com trufa de chocolate.',
-    price: 'R$ 5,10'
+    price: 'R$ 5,50'
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ export const pettyVerre = [
     product_img: FrutasVermelhas,
     product_name: 'Frutas Vermelhas',
     product_desc: 'Cremoso cheese cake, creme de trufas vermelhas e coulis de frutas vermelhas.',
-    price: 'R$ 5,10'
+    price: 'R$ 5,50'
   },
   {
     id: 5,
