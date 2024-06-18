@@ -78,11 +78,11 @@ const Header = () => {
             </Heading>
             </Link>
             <PaddingContainer height="2rem"></PaddingContainer>
-            <Link to="/catalogo" onClick={() => { closeMenu(); window.location.href = '/catalogo'; }}>
+            {/*<Link to="/catalogo" onClick={() => { closeMenu(); window.location.href = '/catalogo'; }}>
               <Heading as="h1" size="h1" align="center" color="primary">
                 Catálogo
               </Heading>
-            </Link>
+            </Link>*/}
           </div>
         </div>
       </StyledHeader>
