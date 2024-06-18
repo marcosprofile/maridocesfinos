@@ -41,9 +41,12 @@ const Tasting = () => {
             width="100%"
             gap="1.5rem"
           >
-            <InfoList info="A degustação é uma forma do cliente conhecer nosso trabalho antes de fechar o pedido e para conhecer sabores, texturas e apresentação dos doces." />
-            <InfoList info="A degustação pode ser presencial com agendamento prévio ou caixa de degustação com 15 doces." />
-            <InfoList info="A degustação possui um valor que será abatido caso o contrato seja fechado no prazo de 7 dias." />
+            <InfoList info="Sabores dos doces sortidos de acordo com a produção da semana." />
+            <InfoList info="Não possuímos serviços de entrega da caixa (retirar pessoalmente ou solicitar uber flash)." />
+            <InfoList info="Temos caixa com 15 unidades e 24 unidades de sabores sortidos." />
+            <InfoList info="Ofereçemos degustação presencial com agendamento." />
+            <InfoList info="Aceitamos pagamentos via transferência bancária, cartão de débito/crédito ou pix." />
+            <InfoList info="Não recomendamos transportar doces via motoboy." />
             <FlexContainer justify="center" top="2rem">
               <Button bgLink="Primary" value="Solicitar degustação" link="https://wa.me/5511969456530?text=Olá,%20gostaria%20de%20solicitar%20a%20degustação" />
             </FlexContainer>

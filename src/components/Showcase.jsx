@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 import {
@@ -14,7 +13,6 @@ import { fadeInLeftVariant, fadeInRightVariant } from '../utils/Variants'
 
 import RightImage from '../assets/img_1.png'
 import BottomImage from '../assets/bottom.png'
-import Button from './Button/Button'
 import Title from './Catalogo/Title'
 
 const Showcase = () => {
@@ -45,11 +43,11 @@ const Showcase = () => {
             </Badge>
             <Title titulo="Doces finos para casamentos e festas em geral. Com entrega em São Paulo e Região" />
             <FlexContainer top="2.5rem" align="center" gap="1rem" respAction>
-              <Link className="link" to="/catalogo">
-              <FlexContainer justify="center">
-                <Button bgLink="Primary" value="Ir para o catálogo" />
-              </FlexContainer>
-              </Link>
+              {/* <Link className="link" to="/catalogo">
+                <FlexContainer justify="center">
+                  <Button bgLink="Primary" value="Ir para o catálogo" />
+                </FlexContainer>
+              </Link> */}
               <Heading as="h6" size="h6" bottom="0" color="grey">
                 +10 tipos diferentes para escolher
               </Heading>

@@ -44,9 +44,9 @@ const Header = () => {
         <Link to="/" onClick={scrollToTop}>
           <LinkContainer color="Primary">Início</LinkContainer>
         </Link>
-        <Link to="/catalogo" onClick={scrollToTop}>
+        {/* <Link to="/catalogo" onClick={scrollToTop}>
           <LinkContainer color="Primary">Catálogo</LinkContainer>
-        </Link>
+        </Link> */}
       </NavBar>
         
       <MenuButton
